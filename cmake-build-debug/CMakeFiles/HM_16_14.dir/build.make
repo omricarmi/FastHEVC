@@ -57,81 +57,9 @@ include CMakeFiles/HM_16_14.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HM_16_14.dir/flags.make
 
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o: ../source/App/TAppDecoder/decmain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/decmain.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/decmain.cpp" > CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/decmain.cpp" -o CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o: ../source/App/TAppDecoder/TAppDecCfg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecCfg.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecCfg.cpp" > CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecCfg.cpp" -o CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o: ../source/App/TAppDecoder/TAppDecTop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecTop.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecTop.cpp" > CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecTop.cpp" -o CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o
-
-
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o: ../source/App/TAppEncoder/encmain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppEncoder/encmain.cpp"
 
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.i: cmake_force
@@ -155,7 +83,7 @@ CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o: ../source/App/TAppEncoder/TAppEncCfg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppEncoder/TAppEncCfg.cpp"
 
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.i: cmake_force
@@ -179,7 +107,7 @@ CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o.provides.build: 
 
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o: ../source/App/TAppEncoder/TAppEncTop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppEncoder/TAppEncTop.cpp"
 
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.i: cmake_force
@@ -201,153 +129,9 @@ CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o.provides: CMakeF
 CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o
 
 
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o: ../source/App/utils/BitrateTargeting/ExtractBitrates.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/ExtractBitrates.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/ExtractBitrates.cpp" > CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/ExtractBitrates.cpp" -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o: ../source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp" > CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp" -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o: ../source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp" > CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp" -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o: ../source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp" > CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp" -o CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o: ../source/App/utils/annexBbytecount.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/annexBbytecount.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/annexBbytecount.cpp" > CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/annexBbytecount.cpp" -o CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o
-
-
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o: ../source/App/utils/convert_NtoMbit_YCbCr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/convert_NtoMbit_YCbCr.cpp"
-
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/convert_NtoMbit_YCbCr.cpp" > CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.i
-
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/utils/convert_NtoMbit_YCbCr.cpp" -o CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.s
-
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.requires:
-
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.requires
-
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.provides: CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.provides.build
-.PHONY : CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.provides
-
-CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.provides.build: CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o
-
-
 CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o: ../source/Lib/libmd5/libmd5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o   -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/libmd5/libmd5.c"
 
 CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.i: cmake_force
@@ -371,7 +155,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o: ../source/Lib/TAppCommon/program_options_lite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TAppCommon/program_options_lite.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.i: cmake_force
@@ -395,7 +179,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o.provide
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o: ../source/Lib/TLibCommon/ContextModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/ContextModel.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.i: cmake_force
@@ -419,7 +203,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o.provides.build:
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o: ../source/Lib/TLibCommon/ContextModel3DBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/ContextModel3DBuffer.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.i: cmake_force
@@ -443,7 +227,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o.provide
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o: ../source/Lib/TLibCommon/Debug.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/Debug.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.i: cmake_force
@@ -467,7 +251,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o.provides.build: CMakeF
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o: ../source/Lib/TLibCommon/SEI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/SEI.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.i: cmake_force
@@ -491,7 +275,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o: ../source/Lib/TLibCommon/TComBitStream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComBitStream.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.i: cmake_force
@@ -515,7 +299,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o.provides.build
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o: ../source/Lib/TLibCommon/TComCABACTables.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComCABACTables.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.i: cmake_force
@@ -539,7 +323,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o.provides.bui
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o: ../source/Lib/TLibCommon/TComChromaFormat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComChromaFormat.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.i: cmake_force
@@ -563,7 +347,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o.provides.bu
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o: ../source/Lib/TLibCommon/TComDataCU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComDataCU.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.i: cmake_force
@@ -587,7 +371,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o: ../source/Lib/TLibCommon/TComInterpolationFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComInterpolationFilter.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.i: cmake_force
@@ -611,7 +395,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o.prov
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o: ../source/Lib/TLibCommon/TComLoopFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComLoopFilter.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.i: cmake_force
@@ -635,7 +419,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o.provides.buil
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o: ../source/Lib/TLibCommon/TComMotionInfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComMotionInfo.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.i: cmake_force
@@ -659,7 +443,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o.provides.buil
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o: ../source/Lib/TLibCommon/TComPattern.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComPattern.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.i: cmake_force
@@ -683,7 +467,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o.provides.build: 
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o: ../source/Lib/TLibCommon/TComPic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComPic.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.i: cmake_force
@@ -707,7 +491,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o.provides.build: CMak
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o: ../source/Lib/TLibCommon/TComPicSym.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComPicSym.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.i: cmake_force
@@ -731,7 +515,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o: ../source/Lib/TLibCommon/TComPicYuv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComPicYuv.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.i: cmake_force
@@ -755,7 +539,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o: ../source/Lib/TLibCommon/TComPicYuvMD5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComPicYuvMD5.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.i: cmake_force
@@ -779,7 +563,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o.provides.build
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o: ../source/Lib/TLibCommon/TComPrediction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComPrediction.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.i: cmake_force
@@ -803,7 +587,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o.provides.buil
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o: ../source/Lib/TLibCommon/TComRdCost.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComRdCost.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.i: cmake_force
@@ -827,7 +611,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o: ../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.i: cmake_force
@@ -851,7 +635,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o.p
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o: ../source/Lib/TLibCommon/TComRom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComRom.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.i: cmake_force
@@ -875,7 +659,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o.provides.build: CMak
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o: ../source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.i: cmake_force
@@ -899,7 +683,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o.pro
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o: ../source/Lib/TLibCommon/TComSlice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComSlice.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.i: cmake_force
@@ -923,7 +707,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o.provides.build: CM
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o: ../source/Lib/TLibCommon/TComTrQuant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComTrQuant.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.i: cmake_force
@@ -947,7 +731,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o.provides.build: 
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o: ../source/Lib/TLibCommon/TComTU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComTU.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.i: cmake_force
@@ -971,7 +755,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o.provides.build: CMake
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o: ../source/Lib/TLibCommon/TComWeightPrediction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComWeightPrediction.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.i: cmake_force
@@ -995,7 +779,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o.provide
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o: ../source/Lib/TLibCommon/TComYuv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibCommon/TComYuv.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.i: cmake_force
@@ -1019,7 +803,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o.provides.build: CMak
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o: ../source/Lib/TLibDecoder/AnnexBread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/AnnexBread.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.i: cmake_force
@@ -1043,7 +827,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o.provides.build: 
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o: ../source/Lib/TLibDecoder/NALread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/NALread.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.i: cmake_force
@@ -1067,7 +851,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o: ../source/Lib/TLibDecoder/SEIread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/SEIread.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.i: cmake_force
@@ -1091,7 +875,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o: ../source/Lib/TLibDecoder/SyntaxElementParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/SyntaxElementParser.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.i: cmake_force
@@ -1115,7 +899,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o.provide
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o: ../source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.i: cmake_force
@@ -1139,7 +923,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o.provides.
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o: ../source/Lib/TLibDecoder/TDecCAVLC.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecCAVLC.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.i: cmake_force
@@ -1163,7 +947,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o: ../source/Lib/TLibDecoder/TDecCu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecCu.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.i: cmake_force
@@ -1187,7 +971,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o.provides.build: CMak
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o: ../source/Lib/TLibDecoder/TDecEntropy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecEntropy.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.i: cmake_force
@@ -1211,7 +995,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o.provides.build:
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o: ../source/Lib/TLibDecoder/TDecGop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecGop.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.i: cmake_force
@@ -1235,7 +1019,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o: ../source/Lib/TLibDecoder/TDecSbac.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecSbac.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.i: cmake_force
@@ -1259,7 +1043,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o.provides.build: CM
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o: ../source/Lib/TLibDecoder/TDecSlice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecSlice.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.i: cmake_force
@@ -1283,7 +1067,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o: ../source/Lib/TLibDecoder/TDecTop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibDecoder/TDecTop.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.i: cmake_force
@@ -1307,7 +1091,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o: ../source/Lib/TLibEncoder/NALwrite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/NALwrite.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.i: cmake_force
@@ -1331,7 +1115,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o.provides.build: CM
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o: ../source/Lib/TLibEncoder/SEIEncoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/SEIEncoder.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.i: cmake_force
@@ -1355,7 +1139,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o.provides.build: 
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o: ../source/Lib/TLibEncoder/SEIwrite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/SEIwrite.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.i: cmake_force
@@ -1379,7 +1163,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o.provides.build: CM
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o: ../source/Lib/TLibEncoder/SyntaxElementWriter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/SyntaxElementWriter.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.i: cmake_force
@@ -1403,7 +1187,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o.provide
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o: ../source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.i: cmake_force
@@ -1427,7 +1211,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o.provides.
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o: ../source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.i: cmake_force
@@ -1451,7 +1235,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o.pr
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o: ../source/Lib/TLibEncoder/TEncCavlc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncCavlc.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.i: cmake_force
@@ -1475,7 +1259,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o: ../source/Lib/TLibEncoder/TEncCu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncCu.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.i: cmake_force
@@ -1499,7 +1283,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o.provides.build: CMak
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o: ../source/Lib/TLibEncoder/TEncEntropy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncEntropy.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.i: cmake_force
@@ -1523,7 +1307,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o.provides.build:
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o: ../source/Lib/TLibEncoder/TEncGOP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncGOP.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.i: cmake_force
@@ -1547,7 +1331,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o: ../source/Lib/TLibEncoder/TEncPic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncPic.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.i: cmake_force
@@ -1571,7 +1355,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o: ../source/Lib/TLibEncoder/TEncPreanalyzer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncPreanalyzer.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.i: cmake_force
@@ -1595,7 +1379,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o.provides.bu
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o: ../source/Lib/TLibEncoder/TEncRateCtrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncRateCtrl.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.i: cmake_force
@@ -1619,7 +1403,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o.provides.build
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o: ../source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.i: cmake_force
@@ -1643,7 +1427,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o.pr
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o: ../source/Lib/TLibEncoder/TEncSbac.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncSbac.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.i: cmake_force
@@ -1667,7 +1451,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o.provides.build: CM
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o: ../source/Lib/TLibEncoder/TEncSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncSearch.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.i: cmake_force
@@ -1691,7 +1475,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o.provides.build: 
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o: ../source/Lib/TLibEncoder/TEncSlice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncSlice.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.i: cmake_force
@@ -1715,7 +1499,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o.provides.build: C
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o: ../source/Lib/TLibEncoder/TEncTop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/TEncTop.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.i: cmake_force
@@ -1739,7 +1523,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o.provides.build: CMa
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o: ../source/Lib/TLibEncoder/WeightPredAnalysis.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibEncoder/WeightPredAnalysis.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.i: cmake_force
@@ -1763,7 +1547,7 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o.provides
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o: CMakeFiles/HM_16_14.dir/flags.make
 CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o: ../source/Lib/TLibVideoIO/TVideoIOYuv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o -c "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib/TLibVideoIO/TVideoIOYuv.cpp"
 
 CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i: cmake_force
@@ -1787,18 +1571,9 @@ CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o.provides.build:
 
 # Object files for target HM_16_14
 HM_16_14_OBJECTS = \
-"CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o" \
 "CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o" \
 "CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o" \
 "CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o" \
-"CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o" \
 "CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o" \
 "CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o" \
 "CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o" \
@@ -1863,18 +1638,9 @@ HM_16_14_OBJECTS = \
 # External object files for target HM_16_14
 HM_16_14_EXTERNAL_OBJECTS =
 
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o
 HM_16_14: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o
 HM_16_14: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o
 HM_16_14: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o
-HM_16_14: CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o
 HM_16_14: CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o
 HM_16_14: CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o
 HM_16_14: CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o
@@ -1937,7 +1703,7 @@ HM_16_14: CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.
 HM_16_14: CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o
 HM_16_14: CMakeFiles/HM_16_14.dir/build.make
 HM_16_14: CMakeFiles/HM_16_14.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable HM_16_14"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Linking CXX executable HM_16_14"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HM_16_14.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1945,18 +1711,9 @@ CMakeFiles/HM_16_14.dir/build: HM_16_14
 
 .PHONY : CMakeFiles/HM_16_14.dir/build
 
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o.requires
 CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o.requires
 CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o.requires
 CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o.requires
-CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o.requires
 CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o.requires
 CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o.requires
 CMakeFiles/HM_16_14.dir/requires: CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o.requires

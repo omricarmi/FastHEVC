@@ -111,98 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HM_16_14
+# Target rules for targets named HM_16_14_ENC
 
 # Build rule for target.
-HM_16_14: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HM_16_14
-.PHONY : HM_16_14
+HM_16_14_ENC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HM_16_14_ENC
+.PHONY : HM_16_14_ENC
 
 # fast build rule for target.
-HM_16_14/fast:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/build
-.PHONY : HM_16_14/fast
-
-source/App/TAppDecoder/TAppDecCfg.o: source/App/TAppDecoder/TAppDecCfg.cpp.o
-
-.PHONY : source/App/TAppDecoder/TAppDecCfg.o
-
-# target to build an object file
-source/App/TAppDecoder/TAppDecCfg.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o
-.PHONY : source/App/TAppDecoder/TAppDecCfg.cpp.o
-
-source/App/TAppDecoder/TAppDecCfg.i: source/App/TAppDecoder/TAppDecCfg.cpp.i
-
-.PHONY : source/App/TAppDecoder/TAppDecCfg.i
-
-# target to preprocess a source file
-source/App/TAppDecoder/TAppDecCfg.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.i
-.PHONY : source/App/TAppDecoder/TAppDecCfg.cpp.i
-
-source/App/TAppDecoder/TAppDecCfg.s: source/App/TAppDecoder/TAppDecCfg.cpp.s
-
-.PHONY : source/App/TAppDecoder/TAppDecCfg.s
-
-# target to generate assembly for a file
-source/App/TAppDecoder/TAppDecCfg.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.s
-.PHONY : source/App/TAppDecoder/TAppDecCfg.cpp.s
-
-source/App/TAppDecoder/TAppDecTop.o: source/App/TAppDecoder/TAppDecTop.cpp.o
-
-.PHONY : source/App/TAppDecoder/TAppDecTop.o
-
-# target to build an object file
-source/App/TAppDecoder/TAppDecTop.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.o
-.PHONY : source/App/TAppDecoder/TAppDecTop.cpp.o
-
-source/App/TAppDecoder/TAppDecTop.i: source/App/TAppDecoder/TAppDecTop.cpp.i
-
-.PHONY : source/App/TAppDecoder/TAppDecTop.i
-
-# target to preprocess a source file
-source/App/TAppDecoder/TAppDecTop.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.i
-.PHONY : source/App/TAppDecoder/TAppDecTop.cpp.i
-
-source/App/TAppDecoder/TAppDecTop.s: source/App/TAppDecoder/TAppDecTop.cpp.s
-
-.PHONY : source/App/TAppDecoder/TAppDecTop.s
-
-# target to generate assembly for a file
-source/App/TAppDecoder/TAppDecTop.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecTop.cpp.s
-.PHONY : source/App/TAppDecoder/TAppDecTop.cpp.s
-
-source/App/TAppDecoder/decmain.o: source/App/TAppDecoder/decmain.cpp.o
-
-.PHONY : source/App/TAppDecoder/decmain.o
-
-# target to build an object file
-source/App/TAppDecoder/decmain.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.o
-.PHONY : source/App/TAppDecoder/decmain.cpp.o
-
-source/App/TAppDecoder/decmain.i: source/App/TAppDecoder/decmain.cpp.i
-
-.PHONY : source/App/TAppDecoder/decmain.i
-
-# target to preprocess a source file
-source/App/TAppDecoder/decmain.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.i
-.PHONY : source/App/TAppDecoder/decmain.cpp.i
-
-source/App/TAppDecoder/decmain.s: source/App/TAppDecoder/decmain.cpp.s
-
-.PHONY : source/App/TAppDecoder/decmain.s
-
-# target to generate assembly for a file
-source/App/TAppDecoder/decmain.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/decmain.cpp.s
-.PHONY : source/App/TAppDecoder/decmain.cpp.s
+HM_16_14_ENC/fast:
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/build
+.PHONY : HM_16_14_ENC/fast
 
 source/App/TAppEncoder/TAppEncCfg.o: source/App/TAppEncoder/TAppEncCfg.cpp.o
 
@@ -210,7 +129,7 @@ source/App/TAppEncoder/TAppEncCfg.o: source/App/TAppEncoder/TAppEncCfg.cpp.o
 
 # target to build an object file
 source/App/TAppEncoder/TAppEncCfg.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/TAppEncCfg.cpp.o
 .PHONY : source/App/TAppEncoder/TAppEncCfg.cpp.o
 
 source/App/TAppEncoder/TAppEncCfg.i: source/App/TAppEncoder/TAppEncCfg.cpp.i
@@ -219,7 +138,7 @@ source/App/TAppEncoder/TAppEncCfg.i: source/App/TAppEncoder/TAppEncCfg.cpp.i
 
 # target to preprocess a source file
 source/App/TAppEncoder/TAppEncCfg.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/TAppEncCfg.cpp.i
 .PHONY : source/App/TAppEncoder/TAppEncCfg.cpp.i
 
 source/App/TAppEncoder/TAppEncCfg.s: source/App/TAppEncoder/TAppEncCfg.cpp.s
@@ -228,7 +147,7 @@ source/App/TAppEncoder/TAppEncCfg.s: source/App/TAppEncoder/TAppEncCfg.cpp.s
 
 # target to generate assembly for a file
 source/App/TAppEncoder/TAppEncCfg.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncCfg.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/TAppEncCfg.cpp.s
 .PHONY : source/App/TAppEncoder/TAppEncCfg.cpp.s
 
 source/App/TAppEncoder/TAppEncTop.o: source/App/TAppEncoder/TAppEncTop.cpp.o
@@ -237,7 +156,7 @@ source/App/TAppEncoder/TAppEncTop.o: source/App/TAppEncoder/TAppEncTop.cpp.o
 
 # target to build an object file
 source/App/TAppEncoder/TAppEncTop.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/TAppEncTop.cpp.o
 .PHONY : source/App/TAppEncoder/TAppEncTop.cpp.o
 
 source/App/TAppEncoder/TAppEncTop.i: source/App/TAppEncoder/TAppEncTop.cpp.i
@@ -246,7 +165,7 @@ source/App/TAppEncoder/TAppEncTop.i: source/App/TAppEncoder/TAppEncTop.cpp.i
 
 # target to preprocess a source file
 source/App/TAppEncoder/TAppEncTop.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/TAppEncTop.cpp.i
 .PHONY : source/App/TAppEncoder/TAppEncTop.cpp.i
 
 source/App/TAppEncoder/TAppEncTop.s: source/App/TAppEncoder/TAppEncTop.cpp.s
@@ -255,7 +174,7 @@ source/App/TAppEncoder/TAppEncTop.s: source/App/TAppEncoder/TAppEncTop.cpp.s
 
 # target to generate assembly for a file
 source/App/TAppEncoder/TAppEncTop.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/TAppEncTop.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/TAppEncTop.cpp.s
 .PHONY : source/App/TAppEncoder/TAppEncTop.cpp.s
 
 source/App/TAppEncoder/encmain.o: source/App/TAppEncoder/encmain.cpp.o
@@ -264,7 +183,7 @@ source/App/TAppEncoder/encmain.o: source/App/TAppEncoder/encmain.cpp.o
 
 # target to build an object file
 source/App/TAppEncoder/encmain.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/encmain.cpp.o
 .PHONY : source/App/TAppEncoder/encmain.cpp.o
 
 source/App/TAppEncoder/encmain.i: source/App/TAppEncoder/encmain.cpp.i
@@ -273,7 +192,7 @@ source/App/TAppEncoder/encmain.i: source/App/TAppEncoder/encmain.cpp.i
 
 # target to preprocess a source file
 source/App/TAppEncoder/encmain.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/encmain.cpp.i
 .PHONY : source/App/TAppEncoder/encmain.cpp.i
 
 source/App/TAppEncoder/encmain.s: source/App/TAppEncoder/encmain.cpp.s
@@ -282,170 +201,8 @@ source/App/TAppEncoder/encmain.s: source/App/TAppEncoder/encmain.cpp.s
 
 # target to generate assembly for a file
 source/App/TAppEncoder/encmain.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/TAppEncoder/encmain.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/App/TAppEncoder/encmain.cpp.s
 .PHONY : source/App/TAppEncoder/encmain.cpp.s
-
-source/App/utils/BitrateTargeting/ExtractBitrates.o: source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o
-
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitrates.o
-
-# target to build an object file
-source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitrates.cpp.o
-
-source/App/utils/BitrateTargeting/ExtractBitrates.i: source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i
-
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitrates.i
-
-# target to preprocess a source file
-source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitrates.cpp.i
-
-source/App/utils/BitrateTargeting/ExtractBitrates.s: source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s
-
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitrates.s
-
-# target to generate assembly for a file
-source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitrates.cpp.s
-
-source/App/utils/BitrateTargeting/ExtractBitratesMain.o: source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o
-
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitratesMain.o
-
-# target to build an object file
-source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.o
-
-source/App/utils/BitrateTargeting/ExtractBitratesMain.i: source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i
-
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitratesMain.i
-
-# target to preprocess a source file
-source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.i
-
-source/App/utils/BitrateTargeting/ExtractBitratesMain.s: source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s
-
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitratesMain.s
-
-# target to generate assembly for a file
-source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s
-.PHONY : source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp.s
-
-source/App/utils/BitrateTargeting/GuessLambdaModifiers.o: source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o
-
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiers.o
-
-# target to build an object file
-source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.o
-
-source/App/utils/BitrateTargeting/GuessLambdaModifiers.i: source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i
-
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiers.i
-
-# target to preprocess a source file
-source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.i
-
-source/App/utils/BitrateTargeting/GuessLambdaModifiers.s: source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s
-
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiers.s
-
-# target to generate assembly for a file
-source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp.s
-
-source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.o: source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o
-
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.o
-
-# target to build an object file
-source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.o
-
-source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.i: source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i
-
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.i
-
-# target to preprocess a source file
-source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.i
-
-source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.s: source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s
-
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.s
-
-# target to generate assembly for a file
-source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s
-.PHONY : source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp.s
-
-source/App/utils/annexBbytecount.o: source/App/utils/annexBbytecount.cpp.o
-
-.PHONY : source/App/utils/annexBbytecount.o
-
-# target to build an object file
-source/App/utils/annexBbytecount.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.o
-.PHONY : source/App/utils/annexBbytecount.cpp.o
-
-source/App/utils/annexBbytecount.i: source/App/utils/annexBbytecount.cpp.i
-
-.PHONY : source/App/utils/annexBbytecount.i
-
-# target to preprocess a source file
-source/App/utils/annexBbytecount.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.i
-.PHONY : source/App/utils/annexBbytecount.cpp.i
-
-source/App/utils/annexBbytecount.s: source/App/utils/annexBbytecount.cpp.s
-
-.PHONY : source/App/utils/annexBbytecount.s
-
-# target to generate assembly for a file
-source/App/utils/annexBbytecount.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/annexBbytecount.cpp.s
-.PHONY : source/App/utils/annexBbytecount.cpp.s
-
-source/App/utils/convert_NtoMbit_YCbCr.o: source/App/utils/convert_NtoMbit_YCbCr.cpp.o
-
-.PHONY : source/App/utils/convert_NtoMbit_YCbCr.o
-
-# target to build an object file
-source/App/utils/convert_NtoMbit_YCbCr.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.o
-.PHONY : source/App/utils/convert_NtoMbit_YCbCr.cpp.o
-
-source/App/utils/convert_NtoMbit_YCbCr.i: source/App/utils/convert_NtoMbit_YCbCr.cpp.i
-
-.PHONY : source/App/utils/convert_NtoMbit_YCbCr.i
-
-# target to preprocess a source file
-source/App/utils/convert_NtoMbit_YCbCr.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.i
-.PHONY : source/App/utils/convert_NtoMbit_YCbCr.cpp.i
-
-source/App/utils/convert_NtoMbit_YCbCr.s: source/App/utils/convert_NtoMbit_YCbCr.cpp.s
-
-.PHONY : source/App/utils/convert_NtoMbit_YCbCr.s
-
-# target to generate assembly for a file
-source/App/utils/convert_NtoMbit_YCbCr.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/App/utils/convert_NtoMbit_YCbCr.cpp.s
-.PHONY : source/App/utils/convert_NtoMbit_YCbCr.cpp.s
 
 source/Lib/TAppCommon/program_options_lite.o: source/Lib/TAppCommon/program_options_lite.cpp.o
 
@@ -453,7 +210,7 @@ source/Lib/TAppCommon/program_options_lite.o: source/Lib/TAppCommon/program_opti
 
 # target to build an object file
 source/Lib/TAppCommon/program_options_lite.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TAppCommon/program_options_lite.cpp.o
 .PHONY : source/Lib/TAppCommon/program_options_lite.cpp.o
 
 source/Lib/TAppCommon/program_options_lite.i: source/Lib/TAppCommon/program_options_lite.cpp.i
@@ -462,7 +219,7 @@ source/Lib/TAppCommon/program_options_lite.i: source/Lib/TAppCommon/program_opti
 
 # target to preprocess a source file
 source/Lib/TAppCommon/program_options_lite.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TAppCommon/program_options_lite.cpp.i
 .PHONY : source/Lib/TAppCommon/program_options_lite.cpp.i
 
 source/Lib/TAppCommon/program_options_lite.s: source/Lib/TAppCommon/program_options_lite.cpp.s
@@ -471,7 +228,7 @@ source/Lib/TAppCommon/program_options_lite.s: source/Lib/TAppCommon/program_opti
 
 # target to generate assembly for a file
 source/Lib/TAppCommon/program_options_lite.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TAppCommon/program_options_lite.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TAppCommon/program_options_lite.cpp.s
 .PHONY : source/Lib/TAppCommon/program_options_lite.cpp.s
 
 source/Lib/TLibCommon/ContextModel.o: source/Lib/TLibCommon/ContextModel.cpp.o
@@ -480,7 +237,7 @@ source/Lib/TLibCommon/ContextModel.o: source/Lib/TLibCommon/ContextModel.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/ContextModel.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/ContextModel.cpp.o
 .PHONY : source/Lib/TLibCommon/ContextModel.cpp.o
 
 source/Lib/TLibCommon/ContextModel.i: source/Lib/TLibCommon/ContextModel.cpp.i
@@ -489,7 +246,7 @@ source/Lib/TLibCommon/ContextModel.i: source/Lib/TLibCommon/ContextModel.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/ContextModel.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/ContextModel.cpp.i
 .PHONY : source/Lib/TLibCommon/ContextModel.cpp.i
 
 source/Lib/TLibCommon/ContextModel.s: source/Lib/TLibCommon/ContextModel.cpp.s
@@ -498,7 +255,7 @@ source/Lib/TLibCommon/ContextModel.s: source/Lib/TLibCommon/ContextModel.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/ContextModel.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/ContextModel.cpp.s
 .PHONY : source/Lib/TLibCommon/ContextModel.cpp.s
 
 source/Lib/TLibCommon/ContextModel3DBuffer.o: source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o
@@ -507,7 +264,7 @@ source/Lib/TLibCommon/ContextModel3DBuffer.o: source/Lib/TLibCommon/ContextModel
 
 # target to build an object file
 source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o
 .PHONY : source/Lib/TLibCommon/ContextModel3DBuffer.cpp.o
 
 source/Lib/TLibCommon/ContextModel3DBuffer.i: source/Lib/TLibCommon/ContextModel3DBuffer.cpp.i
@@ -516,7 +273,7 @@ source/Lib/TLibCommon/ContextModel3DBuffer.i: source/Lib/TLibCommon/ContextModel
 
 # target to preprocess a source file
 source/Lib/TLibCommon/ContextModel3DBuffer.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.i
 .PHONY : source/Lib/TLibCommon/ContextModel3DBuffer.cpp.i
 
 source/Lib/TLibCommon/ContextModel3DBuffer.s: source/Lib/TLibCommon/ContextModel3DBuffer.cpp.s
@@ -525,7 +282,7 @@ source/Lib/TLibCommon/ContextModel3DBuffer.s: source/Lib/TLibCommon/ContextModel
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/ContextModel3DBuffer.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/ContextModel3DBuffer.cpp.s
 .PHONY : source/Lib/TLibCommon/ContextModel3DBuffer.cpp.s
 
 source/Lib/TLibCommon/Debug.o: source/Lib/TLibCommon/Debug.cpp.o
@@ -534,7 +291,7 @@ source/Lib/TLibCommon/Debug.o: source/Lib/TLibCommon/Debug.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/Debug.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/Debug.cpp.o
 .PHONY : source/Lib/TLibCommon/Debug.cpp.o
 
 source/Lib/TLibCommon/Debug.i: source/Lib/TLibCommon/Debug.cpp.i
@@ -543,7 +300,7 @@ source/Lib/TLibCommon/Debug.i: source/Lib/TLibCommon/Debug.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/Debug.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/Debug.cpp.i
 .PHONY : source/Lib/TLibCommon/Debug.cpp.i
 
 source/Lib/TLibCommon/Debug.s: source/Lib/TLibCommon/Debug.cpp.s
@@ -552,7 +309,7 @@ source/Lib/TLibCommon/Debug.s: source/Lib/TLibCommon/Debug.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/Debug.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/Debug.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/Debug.cpp.s
 .PHONY : source/Lib/TLibCommon/Debug.cpp.s
 
 source/Lib/TLibCommon/SEI.o: source/Lib/TLibCommon/SEI.cpp.o
@@ -561,7 +318,7 @@ source/Lib/TLibCommon/SEI.o: source/Lib/TLibCommon/SEI.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/SEI.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/SEI.cpp.o
 .PHONY : source/Lib/TLibCommon/SEI.cpp.o
 
 source/Lib/TLibCommon/SEI.i: source/Lib/TLibCommon/SEI.cpp.i
@@ -570,7 +327,7 @@ source/Lib/TLibCommon/SEI.i: source/Lib/TLibCommon/SEI.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/SEI.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/SEI.cpp.i
 .PHONY : source/Lib/TLibCommon/SEI.cpp.i
 
 source/Lib/TLibCommon/SEI.s: source/Lib/TLibCommon/SEI.cpp.s
@@ -579,7 +336,7 @@ source/Lib/TLibCommon/SEI.s: source/Lib/TLibCommon/SEI.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/SEI.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/SEI.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/SEI.cpp.s
 .PHONY : source/Lib/TLibCommon/SEI.cpp.s
 
 source/Lib/TLibCommon/TComBitStream.o: source/Lib/TLibCommon/TComBitStream.cpp.o
@@ -588,7 +345,7 @@ source/Lib/TLibCommon/TComBitStream.o: source/Lib/TLibCommon/TComBitStream.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComBitStream.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComBitStream.cpp.o
 .PHONY : source/Lib/TLibCommon/TComBitStream.cpp.o
 
 source/Lib/TLibCommon/TComBitStream.i: source/Lib/TLibCommon/TComBitStream.cpp.i
@@ -597,7 +354,7 @@ source/Lib/TLibCommon/TComBitStream.i: source/Lib/TLibCommon/TComBitStream.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComBitStream.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComBitStream.cpp.i
 .PHONY : source/Lib/TLibCommon/TComBitStream.cpp.i
 
 source/Lib/TLibCommon/TComBitStream.s: source/Lib/TLibCommon/TComBitStream.cpp.s
@@ -606,7 +363,7 @@ source/Lib/TLibCommon/TComBitStream.s: source/Lib/TLibCommon/TComBitStream.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComBitStream.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComBitStream.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComBitStream.cpp.s
 .PHONY : source/Lib/TLibCommon/TComBitStream.cpp.s
 
 source/Lib/TLibCommon/TComCABACTables.o: source/Lib/TLibCommon/TComCABACTables.cpp.o
@@ -615,7 +372,7 @@ source/Lib/TLibCommon/TComCABACTables.o: source/Lib/TLibCommon/TComCABACTables.c
 
 # target to build an object file
 source/Lib/TLibCommon/TComCABACTables.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComCABACTables.cpp.o
 .PHONY : source/Lib/TLibCommon/TComCABACTables.cpp.o
 
 source/Lib/TLibCommon/TComCABACTables.i: source/Lib/TLibCommon/TComCABACTables.cpp.i
@@ -624,7 +381,7 @@ source/Lib/TLibCommon/TComCABACTables.i: source/Lib/TLibCommon/TComCABACTables.c
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComCABACTables.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComCABACTables.cpp.i
 .PHONY : source/Lib/TLibCommon/TComCABACTables.cpp.i
 
 source/Lib/TLibCommon/TComCABACTables.s: source/Lib/TLibCommon/TComCABACTables.cpp.s
@@ -633,7 +390,7 @@ source/Lib/TLibCommon/TComCABACTables.s: source/Lib/TLibCommon/TComCABACTables.c
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComCABACTables.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComCABACTables.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComCABACTables.cpp.s
 .PHONY : source/Lib/TLibCommon/TComCABACTables.cpp.s
 
 source/Lib/TLibCommon/TComChromaFormat.o: source/Lib/TLibCommon/TComChromaFormat.cpp.o
@@ -642,7 +399,7 @@ source/Lib/TLibCommon/TComChromaFormat.o: source/Lib/TLibCommon/TComChromaFormat
 
 # target to build an object file
 source/Lib/TLibCommon/TComChromaFormat.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.o
 .PHONY : source/Lib/TLibCommon/TComChromaFormat.cpp.o
 
 source/Lib/TLibCommon/TComChromaFormat.i: source/Lib/TLibCommon/TComChromaFormat.cpp.i
@@ -651,7 +408,7 @@ source/Lib/TLibCommon/TComChromaFormat.i: source/Lib/TLibCommon/TComChromaFormat
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComChromaFormat.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.i
 .PHONY : source/Lib/TLibCommon/TComChromaFormat.cpp.i
 
 source/Lib/TLibCommon/TComChromaFormat.s: source/Lib/TLibCommon/TComChromaFormat.cpp.s
@@ -660,7 +417,7 @@ source/Lib/TLibCommon/TComChromaFormat.s: source/Lib/TLibCommon/TComChromaFormat
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComChromaFormat.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComChromaFormat.cpp.s
 .PHONY : source/Lib/TLibCommon/TComChromaFormat.cpp.s
 
 source/Lib/TLibCommon/TComDataCU.o: source/Lib/TLibCommon/TComDataCU.cpp.o
@@ -669,7 +426,7 @@ source/Lib/TLibCommon/TComDataCU.o: source/Lib/TLibCommon/TComDataCU.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComDataCU.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComDataCU.cpp.o
 .PHONY : source/Lib/TLibCommon/TComDataCU.cpp.o
 
 source/Lib/TLibCommon/TComDataCU.i: source/Lib/TLibCommon/TComDataCU.cpp.i
@@ -678,7 +435,7 @@ source/Lib/TLibCommon/TComDataCU.i: source/Lib/TLibCommon/TComDataCU.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComDataCU.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComDataCU.cpp.i
 .PHONY : source/Lib/TLibCommon/TComDataCU.cpp.i
 
 source/Lib/TLibCommon/TComDataCU.s: source/Lib/TLibCommon/TComDataCU.cpp.s
@@ -687,7 +444,7 @@ source/Lib/TLibCommon/TComDataCU.s: source/Lib/TLibCommon/TComDataCU.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComDataCU.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComDataCU.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComDataCU.cpp.s
 .PHONY : source/Lib/TLibCommon/TComDataCU.cpp.s
 
 source/Lib/TLibCommon/TComInterpolationFilter.o: source/Lib/TLibCommon/TComInterpolationFilter.cpp.o
@@ -696,7 +453,7 @@ source/Lib/TLibCommon/TComInterpolationFilter.o: source/Lib/TLibCommon/TComInter
 
 # target to build an object file
 source/Lib/TLibCommon/TComInterpolationFilter.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.o
 .PHONY : source/Lib/TLibCommon/TComInterpolationFilter.cpp.o
 
 source/Lib/TLibCommon/TComInterpolationFilter.i: source/Lib/TLibCommon/TComInterpolationFilter.cpp.i
@@ -705,7 +462,7 @@ source/Lib/TLibCommon/TComInterpolationFilter.i: source/Lib/TLibCommon/TComInter
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComInterpolationFilter.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.i
 .PHONY : source/Lib/TLibCommon/TComInterpolationFilter.cpp.i
 
 source/Lib/TLibCommon/TComInterpolationFilter.s: source/Lib/TLibCommon/TComInterpolationFilter.cpp.s
@@ -714,7 +471,7 @@ source/Lib/TLibCommon/TComInterpolationFilter.s: source/Lib/TLibCommon/TComInter
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComInterpolationFilter.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComInterpolationFilter.cpp.s
 .PHONY : source/Lib/TLibCommon/TComInterpolationFilter.cpp.s
 
 source/Lib/TLibCommon/TComLoopFilter.o: source/Lib/TLibCommon/TComLoopFilter.cpp.o
@@ -723,7 +480,7 @@ source/Lib/TLibCommon/TComLoopFilter.o: source/Lib/TLibCommon/TComLoopFilter.cpp
 
 # target to build an object file
 source/Lib/TLibCommon/TComLoopFilter.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.o
 .PHONY : source/Lib/TLibCommon/TComLoopFilter.cpp.o
 
 source/Lib/TLibCommon/TComLoopFilter.i: source/Lib/TLibCommon/TComLoopFilter.cpp.i
@@ -732,7 +489,7 @@ source/Lib/TLibCommon/TComLoopFilter.i: source/Lib/TLibCommon/TComLoopFilter.cpp
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComLoopFilter.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.i
 .PHONY : source/Lib/TLibCommon/TComLoopFilter.cpp.i
 
 source/Lib/TLibCommon/TComLoopFilter.s: source/Lib/TLibCommon/TComLoopFilter.cpp.s
@@ -741,7 +498,7 @@ source/Lib/TLibCommon/TComLoopFilter.s: source/Lib/TLibCommon/TComLoopFilter.cpp
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComLoopFilter.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComLoopFilter.cpp.s
 .PHONY : source/Lib/TLibCommon/TComLoopFilter.cpp.s
 
 source/Lib/TLibCommon/TComMotionInfo.o: source/Lib/TLibCommon/TComMotionInfo.cpp.o
@@ -750,7 +507,7 @@ source/Lib/TLibCommon/TComMotionInfo.o: source/Lib/TLibCommon/TComMotionInfo.cpp
 
 # target to build an object file
 source/Lib/TLibCommon/TComMotionInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.o
 .PHONY : source/Lib/TLibCommon/TComMotionInfo.cpp.o
 
 source/Lib/TLibCommon/TComMotionInfo.i: source/Lib/TLibCommon/TComMotionInfo.cpp.i
@@ -759,7 +516,7 @@ source/Lib/TLibCommon/TComMotionInfo.i: source/Lib/TLibCommon/TComMotionInfo.cpp
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComMotionInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.i
 .PHONY : source/Lib/TLibCommon/TComMotionInfo.cpp.i
 
 source/Lib/TLibCommon/TComMotionInfo.s: source/Lib/TLibCommon/TComMotionInfo.cpp.s
@@ -768,7 +525,7 @@ source/Lib/TLibCommon/TComMotionInfo.s: source/Lib/TLibCommon/TComMotionInfo.cpp
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComMotionInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComMotionInfo.cpp.s
 .PHONY : source/Lib/TLibCommon/TComMotionInfo.cpp.s
 
 source/Lib/TLibCommon/TComPattern.o: source/Lib/TLibCommon/TComPattern.cpp.o
@@ -777,7 +534,7 @@ source/Lib/TLibCommon/TComPattern.o: source/Lib/TLibCommon/TComPattern.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComPattern.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPattern.cpp.o
 .PHONY : source/Lib/TLibCommon/TComPattern.cpp.o
 
 source/Lib/TLibCommon/TComPattern.i: source/Lib/TLibCommon/TComPattern.cpp.i
@@ -786,7 +543,7 @@ source/Lib/TLibCommon/TComPattern.i: source/Lib/TLibCommon/TComPattern.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComPattern.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPattern.cpp.i
 .PHONY : source/Lib/TLibCommon/TComPattern.cpp.i
 
 source/Lib/TLibCommon/TComPattern.s: source/Lib/TLibCommon/TComPattern.cpp.s
@@ -795,7 +552,7 @@ source/Lib/TLibCommon/TComPattern.s: source/Lib/TLibCommon/TComPattern.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComPattern.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPattern.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPattern.cpp.s
 .PHONY : source/Lib/TLibCommon/TComPattern.cpp.s
 
 source/Lib/TLibCommon/TComPic.o: source/Lib/TLibCommon/TComPic.cpp.o
@@ -804,7 +561,7 @@ source/Lib/TLibCommon/TComPic.o: source/Lib/TLibCommon/TComPic.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComPic.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPic.cpp.o
 .PHONY : source/Lib/TLibCommon/TComPic.cpp.o
 
 source/Lib/TLibCommon/TComPic.i: source/Lib/TLibCommon/TComPic.cpp.i
@@ -813,7 +570,7 @@ source/Lib/TLibCommon/TComPic.i: source/Lib/TLibCommon/TComPic.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComPic.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPic.cpp.i
 .PHONY : source/Lib/TLibCommon/TComPic.cpp.i
 
 source/Lib/TLibCommon/TComPic.s: source/Lib/TLibCommon/TComPic.cpp.s
@@ -822,7 +579,7 @@ source/Lib/TLibCommon/TComPic.s: source/Lib/TLibCommon/TComPic.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComPic.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPic.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPic.cpp.s
 .PHONY : source/Lib/TLibCommon/TComPic.cpp.s
 
 source/Lib/TLibCommon/TComPicSym.o: source/Lib/TLibCommon/TComPicSym.cpp.o
@@ -831,7 +588,7 @@ source/Lib/TLibCommon/TComPicSym.o: source/Lib/TLibCommon/TComPicSym.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComPicSym.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicSym.cpp.o
 .PHONY : source/Lib/TLibCommon/TComPicSym.cpp.o
 
 source/Lib/TLibCommon/TComPicSym.i: source/Lib/TLibCommon/TComPicSym.cpp.i
@@ -840,7 +597,7 @@ source/Lib/TLibCommon/TComPicSym.i: source/Lib/TLibCommon/TComPicSym.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComPicSym.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicSym.cpp.i
 .PHONY : source/Lib/TLibCommon/TComPicSym.cpp.i
 
 source/Lib/TLibCommon/TComPicSym.s: source/Lib/TLibCommon/TComPicSym.cpp.s
@@ -849,7 +606,7 @@ source/Lib/TLibCommon/TComPicSym.s: source/Lib/TLibCommon/TComPicSym.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComPicSym.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicSym.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicSym.cpp.s
 .PHONY : source/Lib/TLibCommon/TComPicSym.cpp.s
 
 source/Lib/TLibCommon/TComPicYuv.o: source/Lib/TLibCommon/TComPicYuv.cpp.o
@@ -858,7 +615,7 @@ source/Lib/TLibCommon/TComPicYuv.o: source/Lib/TLibCommon/TComPicYuv.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComPicYuv.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicYuv.cpp.o
 .PHONY : source/Lib/TLibCommon/TComPicYuv.cpp.o
 
 source/Lib/TLibCommon/TComPicYuv.i: source/Lib/TLibCommon/TComPicYuv.cpp.i
@@ -867,7 +624,7 @@ source/Lib/TLibCommon/TComPicYuv.i: source/Lib/TLibCommon/TComPicYuv.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComPicYuv.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicYuv.cpp.i
 .PHONY : source/Lib/TLibCommon/TComPicYuv.cpp.i
 
 source/Lib/TLibCommon/TComPicYuv.s: source/Lib/TLibCommon/TComPicYuv.cpp.s
@@ -876,7 +633,7 @@ source/Lib/TLibCommon/TComPicYuv.s: source/Lib/TLibCommon/TComPicYuv.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComPicYuv.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuv.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicYuv.cpp.s
 .PHONY : source/Lib/TLibCommon/TComPicYuv.cpp.s
 
 source/Lib/TLibCommon/TComPicYuvMD5.o: source/Lib/TLibCommon/TComPicYuvMD5.cpp.o
@@ -885,7 +642,7 @@ source/Lib/TLibCommon/TComPicYuvMD5.o: source/Lib/TLibCommon/TComPicYuvMD5.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComPicYuvMD5.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.o
 .PHONY : source/Lib/TLibCommon/TComPicYuvMD5.cpp.o
 
 source/Lib/TLibCommon/TComPicYuvMD5.i: source/Lib/TLibCommon/TComPicYuvMD5.cpp.i
@@ -894,7 +651,7 @@ source/Lib/TLibCommon/TComPicYuvMD5.i: source/Lib/TLibCommon/TComPicYuvMD5.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComPicYuvMD5.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.i
 .PHONY : source/Lib/TLibCommon/TComPicYuvMD5.cpp.i
 
 source/Lib/TLibCommon/TComPicYuvMD5.s: source/Lib/TLibCommon/TComPicYuvMD5.cpp.s
@@ -903,7 +660,7 @@ source/Lib/TLibCommon/TComPicYuvMD5.s: source/Lib/TLibCommon/TComPicYuvMD5.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComPicYuvMD5.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPicYuvMD5.cpp.s
 .PHONY : source/Lib/TLibCommon/TComPicYuvMD5.cpp.s
 
 source/Lib/TLibCommon/TComPrediction.o: source/Lib/TLibCommon/TComPrediction.cpp.o
@@ -912,7 +669,7 @@ source/Lib/TLibCommon/TComPrediction.o: source/Lib/TLibCommon/TComPrediction.cpp
 
 # target to build an object file
 source/Lib/TLibCommon/TComPrediction.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPrediction.cpp.o
 .PHONY : source/Lib/TLibCommon/TComPrediction.cpp.o
 
 source/Lib/TLibCommon/TComPrediction.i: source/Lib/TLibCommon/TComPrediction.cpp.i
@@ -921,7 +678,7 @@ source/Lib/TLibCommon/TComPrediction.i: source/Lib/TLibCommon/TComPrediction.cpp
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComPrediction.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPrediction.cpp.i
 .PHONY : source/Lib/TLibCommon/TComPrediction.cpp.i
 
 source/Lib/TLibCommon/TComPrediction.s: source/Lib/TLibCommon/TComPrediction.cpp.s
@@ -930,7 +687,7 @@ source/Lib/TLibCommon/TComPrediction.s: source/Lib/TLibCommon/TComPrediction.cpp
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComPrediction.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComPrediction.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComPrediction.cpp.s
 .PHONY : source/Lib/TLibCommon/TComPrediction.cpp.s
 
 source/Lib/TLibCommon/TComRdCost.o: source/Lib/TLibCommon/TComRdCost.cpp.o
@@ -939,7 +696,7 @@ source/Lib/TLibCommon/TComRdCost.o: source/Lib/TLibCommon/TComRdCost.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComRdCost.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRdCost.cpp.o
 .PHONY : source/Lib/TLibCommon/TComRdCost.cpp.o
 
 source/Lib/TLibCommon/TComRdCost.i: source/Lib/TLibCommon/TComRdCost.cpp.i
@@ -948,7 +705,7 @@ source/Lib/TLibCommon/TComRdCost.i: source/Lib/TLibCommon/TComRdCost.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComRdCost.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRdCost.cpp.i
 .PHONY : source/Lib/TLibCommon/TComRdCost.cpp.i
 
 source/Lib/TLibCommon/TComRdCost.s: source/Lib/TLibCommon/TComRdCost.cpp.s
@@ -957,7 +714,7 @@ source/Lib/TLibCommon/TComRdCost.s: source/Lib/TLibCommon/TComRdCost.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComRdCost.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCost.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRdCost.cpp.s
 .PHONY : source/Lib/TLibCommon/TComRdCost.cpp.s
 
 source/Lib/TLibCommon/TComRdCostWeightPrediction.o: source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o
@@ -966,7 +723,7 @@ source/Lib/TLibCommon/TComRdCostWeightPrediction.o: source/Lib/TLibCommon/TComRd
 
 # target to build an object file
 source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o
 .PHONY : source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.o
 
 source/Lib/TLibCommon/TComRdCostWeightPrediction.i: source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.i
@@ -975,7 +732,7 @@ source/Lib/TLibCommon/TComRdCostWeightPrediction.i: source/Lib/TLibCommon/TComRd
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.i
 .PHONY : source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.i
 
 source/Lib/TLibCommon/TComRdCostWeightPrediction.s: source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.s
@@ -984,7 +741,7 @@ source/Lib/TLibCommon/TComRdCostWeightPrediction.s: source/Lib/TLibCommon/TComRd
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.s
 .PHONY : source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp.s
 
 source/Lib/TLibCommon/TComRom.o: source/Lib/TLibCommon/TComRom.cpp.o
@@ -993,7 +750,7 @@ source/Lib/TLibCommon/TComRom.o: source/Lib/TLibCommon/TComRom.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComRom.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRom.cpp.o
 .PHONY : source/Lib/TLibCommon/TComRom.cpp.o
 
 source/Lib/TLibCommon/TComRom.i: source/Lib/TLibCommon/TComRom.cpp.i
@@ -1002,7 +759,7 @@ source/Lib/TLibCommon/TComRom.i: source/Lib/TLibCommon/TComRom.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComRom.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRom.cpp.i
 .PHONY : source/Lib/TLibCommon/TComRom.cpp.i
 
 source/Lib/TLibCommon/TComRom.s: source/Lib/TLibCommon/TComRom.cpp.s
@@ -1011,7 +768,7 @@ source/Lib/TLibCommon/TComRom.s: source/Lib/TLibCommon/TComRom.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComRom.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComRom.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComRom.cpp.s
 .PHONY : source/Lib/TLibCommon/TComRom.cpp.s
 
 source/Lib/TLibCommon/TComSampleAdaptiveOffset.o: source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o
@@ -1020,7 +777,7 @@ source/Lib/TLibCommon/TComSampleAdaptiveOffset.o: source/Lib/TLibCommon/TComSamp
 
 # target to build an object file
 source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o
 .PHONY : source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.o
 
 source/Lib/TLibCommon/TComSampleAdaptiveOffset.i: source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.i
@@ -1029,7 +786,7 @@ source/Lib/TLibCommon/TComSampleAdaptiveOffset.i: source/Lib/TLibCommon/TComSamp
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.i
 .PHONY : source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.i
 
 source/Lib/TLibCommon/TComSampleAdaptiveOffset.s: source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.s
@@ -1038,7 +795,7 @@ source/Lib/TLibCommon/TComSampleAdaptiveOffset.s: source/Lib/TLibCommon/TComSamp
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.s
 .PHONY : source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp.s
 
 source/Lib/TLibCommon/TComSlice.o: source/Lib/TLibCommon/TComSlice.cpp.o
@@ -1047,7 +804,7 @@ source/Lib/TLibCommon/TComSlice.o: source/Lib/TLibCommon/TComSlice.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComSlice.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComSlice.cpp.o
 .PHONY : source/Lib/TLibCommon/TComSlice.cpp.o
 
 source/Lib/TLibCommon/TComSlice.i: source/Lib/TLibCommon/TComSlice.cpp.i
@@ -1056,7 +813,7 @@ source/Lib/TLibCommon/TComSlice.i: source/Lib/TLibCommon/TComSlice.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComSlice.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComSlice.cpp.i
 .PHONY : source/Lib/TLibCommon/TComSlice.cpp.i
 
 source/Lib/TLibCommon/TComSlice.s: source/Lib/TLibCommon/TComSlice.cpp.s
@@ -1065,7 +822,7 @@ source/Lib/TLibCommon/TComSlice.s: source/Lib/TLibCommon/TComSlice.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComSlice.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComSlice.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComSlice.cpp.s
 .PHONY : source/Lib/TLibCommon/TComSlice.cpp.s
 
 source/Lib/TLibCommon/TComTU.o: source/Lib/TLibCommon/TComTU.cpp.o
@@ -1074,7 +831,7 @@ source/Lib/TLibCommon/TComTU.o: source/Lib/TLibCommon/TComTU.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComTU.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComTU.cpp.o
 .PHONY : source/Lib/TLibCommon/TComTU.cpp.o
 
 source/Lib/TLibCommon/TComTU.i: source/Lib/TLibCommon/TComTU.cpp.i
@@ -1083,7 +840,7 @@ source/Lib/TLibCommon/TComTU.i: source/Lib/TLibCommon/TComTU.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComTU.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComTU.cpp.i
 .PHONY : source/Lib/TLibCommon/TComTU.cpp.i
 
 source/Lib/TLibCommon/TComTU.s: source/Lib/TLibCommon/TComTU.cpp.s
@@ -1092,7 +849,7 @@ source/Lib/TLibCommon/TComTU.s: source/Lib/TLibCommon/TComTU.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComTU.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTU.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComTU.cpp.s
 .PHONY : source/Lib/TLibCommon/TComTU.cpp.s
 
 source/Lib/TLibCommon/TComTrQuant.o: source/Lib/TLibCommon/TComTrQuant.cpp.o
@@ -1101,7 +858,7 @@ source/Lib/TLibCommon/TComTrQuant.o: source/Lib/TLibCommon/TComTrQuant.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComTrQuant.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComTrQuant.cpp.o
 .PHONY : source/Lib/TLibCommon/TComTrQuant.cpp.o
 
 source/Lib/TLibCommon/TComTrQuant.i: source/Lib/TLibCommon/TComTrQuant.cpp.i
@@ -1110,7 +867,7 @@ source/Lib/TLibCommon/TComTrQuant.i: source/Lib/TLibCommon/TComTrQuant.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComTrQuant.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComTrQuant.cpp.i
 .PHONY : source/Lib/TLibCommon/TComTrQuant.cpp.i
 
 source/Lib/TLibCommon/TComTrQuant.s: source/Lib/TLibCommon/TComTrQuant.cpp.s
@@ -1119,7 +876,7 @@ source/Lib/TLibCommon/TComTrQuant.s: source/Lib/TLibCommon/TComTrQuant.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComTrQuant.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComTrQuant.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComTrQuant.cpp.s
 .PHONY : source/Lib/TLibCommon/TComTrQuant.cpp.s
 
 source/Lib/TLibCommon/TComWeightPrediction.o: source/Lib/TLibCommon/TComWeightPrediction.cpp.o
@@ -1128,7 +885,7 @@ source/Lib/TLibCommon/TComWeightPrediction.o: source/Lib/TLibCommon/TComWeightPr
 
 # target to build an object file
 source/Lib/TLibCommon/TComWeightPrediction.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.o
 .PHONY : source/Lib/TLibCommon/TComWeightPrediction.cpp.o
 
 source/Lib/TLibCommon/TComWeightPrediction.i: source/Lib/TLibCommon/TComWeightPrediction.cpp.i
@@ -1137,7 +894,7 @@ source/Lib/TLibCommon/TComWeightPrediction.i: source/Lib/TLibCommon/TComWeightPr
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComWeightPrediction.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.i
 .PHONY : source/Lib/TLibCommon/TComWeightPrediction.cpp.i
 
 source/Lib/TLibCommon/TComWeightPrediction.s: source/Lib/TLibCommon/TComWeightPrediction.cpp.s
@@ -1146,7 +903,7 @@ source/Lib/TLibCommon/TComWeightPrediction.s: source/Lib/TLibCommon/TComWeightPr
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComWeightPrediction.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComWeightPrediction.cpp.s
 .PHONY : source/Lib/TLibCommon/TComWeightPrediction.cpp.s
 
 source/Lib/TLibCommon/TComYuv.o: source/Lib/TLibCommon/TComYuv.cpp.o
@@ -1155,7 +912,7 @@ source/Lib/TLibCommon/TComYuv.o: source/Lib/TLibCommon/TComYuv.cpp.o
 
 # target to build an object file
 source/Lib/TLibCommon/TComYuv.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComYuv.cpp.o
 .PHONY : source/Lib/TLibCommon/TComYuv.cpp.o
 
 source/Lib/TLibCommon/TComYuv.i: source/Lib/TLibCommon/TComYuv.cpp.i
@@ -1164,7 +921,7 @@ source/Lib/TLibCommon/TComYuv.i: source/Lib/TLibCommon/TComYuv.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibCommon/TComYuv.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComYuv.cpp.i
 .PHONY : source/Lib/TLibCommon/TComYuv.cpp.i
 
 source/Lib/TLibCommon/TComYuv.s: source/Lib/TLibCommon/TComYuv.cpp.s
@@ -1173,7 +930,7 @@ source/Lib/TLibCommon/TComYuv.s: source/Lib/TLibCommon/TComYuv.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibCommon/TComYuv.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibCommon/TComYuv.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibCommon/TComYuv.cpp.s
 .PHONY : source/Lib/TLibCommon/TComYuv.cpp.s
 
 source/Lib/TLibDecoder/AnnexBread.o: source/Lib/TLibDecoder/AnnexBread.cpp.o
@@ -1182,7 +939,7 @@ source/Lib/TLibDecoder/AnnexBread.o: source/Lib/TLibDecoder/AnnexBread.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/AnnexBread.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/AnnexBread.cpp.o
 .PHONY : source/Lib/TLibDecoder/AnnexBread.cpp.o
 
 source/Lib/TLibDecoder/AnnexBread.i: source/Lib/TLibDecoder/AnnexBread.cpp.i
@@ -1191,7 +948,7 @@ source/Lib/TLibDecoder/AnnexBread.i: source/Lib/TLibDecoder/AnnexBread.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/AnnexBread.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/AnnexBread.cpp.i
 .PHONY : source/Lib/TLibDecoder/AnnexBread.cpp.i
 
 source/Lib/TLibDecoder/AnnexBread.s: source/Lib/TLibDecoder/AnnexBread.cpp.s
@@ -1200,7 +957,7 @@ source/Lib/TLibDecoder/AnnexBread.s: source/Lib/TLibDecoder/AnnexBread.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/AnnexBread.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/AnnexBread.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/AnnexBread.cpp.s
 .PHONY : source/Lib/TLibDecoder/AnnexBread.cpp.s
 
 source/Lib/TLibDecoder/NALread.o: source/Lib/TLibDecoder/NALread.cpp.o
@@ -1209,7 +966,7 @@ source/Lib/TLibDecoder/NALread.o: source/Lib/TLibDecoder/NALread.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/NALread.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/NALread.cpp.o
 .PHONY : source/Lib/TLibDecoder/NALread.cpp.o
 
 source/Lib/TLibDecoder/NALread.i: source/Lib/TLibDecoder/NALread.cpp.i
@@ -1218,7 +975,7 @@ source/Lib/TLibDecoder/NALread.i: source/Lib/TLibDecoder/NALread.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/NALread.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/NALread.cpp.i
 .PHONY : source/Lib/TLibDecoder/NALread.cpp.i
 
 source/Lib/TLibDecoder/NALread.s: source/Lib/TLibDecoder/NALread.cpp.s
@@ -1227,7 +984,7 @@ source/Lib/TLibDecoder/NALread.s: source/Lib/TLibDecoder/NALread.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/NALread.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/NALread.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/NALread.cpp.s
 .PHONY : source/Lib/TLibDecoder/NALread.cpp.s
 
 source/Lib/TLibDecoder/SEIread.o: source/Lib/TLibDecoder/SEIread.cpp.o
@@ -1236,7 +993,7 @@ source/Lib/TLibDecoder/SEIread.o: source/Lib/TLibDecoder/SEIread.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/SEIread.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/SEIread.cpp.o
 .PHONY : source/Lib/TLibDecoder/SEIread.cpp.o
 
 source/Lib/TLibDecoder/SEIread.i: source/Lib/TLibDecoder/SEIread.cpp.i
@@ -1245,7 +1002,7 @@ source/Lib/TLibDecoder/SEIread.i: source/Lib/TLibDecoder/SEIread.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/SEIread.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/SEIread.cpp.i
 .PHONY : source/Lib/TLibDecoder/SEIread.cpp.i
 
 source/Lib/TLibDecoder/SEIread.s: source/Lib/TLibDecoder/SEIread.cpp.s
@@ -1254,7 +1011,7 @@ source/Lib/TLibDecoder/SEIread.s: source/Lib/TLibDecoder/SEIread.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/SEIread.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SEIread.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/SEIread.cpp.s
 .PHONY : source/Lib/TLibDecoder/SEIread.cpp.s
 
 source/Lib/TLibDecoder/SyntaxElementParser.o: source/Lib/TLibDecoder/SyntaxElementParser.cpp.o
@@ -1263,7 +1020,7 @@ source/Lib/TLibDecoder/SyntaxElementParser.o: source/Lib/TLibDecoder/SyntaxEleme
 
 # target to build an object file
 source/Lib/TLibDecoder/SyntaxElementParser.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.o
 .PHONY : source/Lib/TLibDecoder/SyntaxElementParser.cpp.o
 
 source/Lib/TLibDecoder/SyntaxElementParser.i: source/Lib/TLibDecoder/SyntaxElementParser.cpp.i
@@ -1272,7 +1029,7 @@ source/Lib/TLibDecoder/SyntaxElementParser.i: source/Lib/TLibDecoder/SyntaxEleme
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/SyntaxElementParser.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.i
 .PHONY : source/Lib/TLibDecoder/SyntaxElementParser.cpp.i
 
 source/Lib/TLibDecoder/SyntaxElementParser.s: source/Lib/TLibDecoder/SyntaxElementParser.cpp.s
@@ -1281,7 +1038,7 @@ source/Lib/TLibDecoder/SyntaxElementParser.s: source/Lib/TLibDecoder/SyntaxEleme
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/SyntaxElementParser.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/SyntaxElementParser.cpp.s
 .PHONY : source/Lib/TLibDecoder/SyntaxElementParser.cpp.s
 
 source/Lib/TLibDecoder/TDecBinCoderCABAC.o: source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o
@@ -1290,7 +1047,7 @@ source/Lib/TLibDecoder/TDecBinCoderCABAC.o: source/Lib/TLibDecoder/TDecBinCoderC
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.o
 
 source/Lib/TLibDecoder/TDecBinCoderCABAC.i: source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.i
@@ -1299,7 +1056,7 @@ source/Lib/TLibDecoder/TDecBinCoderCABAC.i: source/Lib/TLibDecoder/TDecBinCoderC
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.i
 
 source/Lib/TLibDecoder/TDecBinCoderCABAC.s: source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.s
@@ -1308,7 +1065,7 @@ source/Lib/TLibDecoder/TDecBinCoderCABAC.s: source/Lib/TLibDecoder/TDecBinCoderC
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp.s
 
 source/Lib/TLibDecoder/TDecCAVLC.o: source/Lib/TLibDecoder/TDecCAVLC.cpp.o
@@ -1317,7 +1074,7 @@ source/Lib/TLibDecoder/TDecCAVLC.o: source/Lib/TLibDecoder/TDecCAVLC.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecCAVLC.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecCAVLC.cpp.o
 
 source/Lib/TLibDecoder/TDecCAVLC.i: source/Lib/TLibDecoder/TDecCAVLC.cpp.i
@@ -1326,7 +1083,7 @@ source/Lib/TLibDecoder/TDecCAVLC.i: source/Lib/TLibDecoder/TDecCAVLC.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecCAVLC.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecCAVLC.cpp.i
 
 source/Lib/TLibDecoder/TDecCAVLC.s: source/Lib/TLibDecoder/TDecCAVLC.cpp.s
@@ -1335,7 +1092,7 @@ source/Lib/TLibDecoder/TDecCAVLC.s: source/Lib/TLibDecoder/TDecCAVLC.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecCAVLC.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecCAVLC.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecCAVLC.cpp.s
 
 source/Lib/TLibDecoder/TDecCu.o: source/Lib/TLibDecoder/TDecCu.cpp.o
@@ -1344,7 +1101,7 @@ source/Lib/TLibDecoder/TDecCu.o: source/Lib/TLibDecoder/TDecCu.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecCu.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecCu.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecCu.cpp.o
 
 source/Lib/TLibDecoder/TDecCu.i: source/Lib/TLibDecoder/TDecCu.cpp.i
@@ -1353,7 +1110,7 @@ source/Lib/TLibDecoder/TDecCu.i: source/Lib/TLibDecoder/TDecCu.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecCu.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecCu.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecCu.cpp.i
 
 source/Lib/TLibDecoder/TDecCu.s: source/Lib/TLibDecoder/TDecCu.cpp.s
@@ -1362,7 +1119,7 @@ source/Lib/TLibDecoder/TDecCu.s: source/Lib/TLibDecoder/TDecCu.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecCu.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecCu.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecCu.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecCu.cpp.s
 
 source/Lib/TLibDecoder/TDecEntropy.o: source/Lib/TLibDecoder/TDecEntropy.cpp.o
@@ -1371,7 +1128,7 @@ source/Lib/TLibDecoder/TDecEntropy.o: source/Lib/TLibDecoder/TDecEntropy.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecEntropy.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecEntropy.cpp.o
 
 source/Lib/TLibDecoder/TDecEntropy.i: source/Lib/TLibDecoder/TDecEntropy.cpp.i
@@ -1380,7 +1137,7 @@ source/Lib/TLibDecoder/TDecEntropy.i: source/Lib/TLibDecoder/TDecEntropy.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecEntropy.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecEntropy.cpp.i
 
 source/Lib/TLibDecoder/TDecEntropy.s: source/Lib/TLibDecoder/TDecEntropy.cpp.s
@@ -1389,7 +1146,7 @@ source/Lib/TLibDecoder/TDecEntropy.s: source/Lib/TLibDecoder/TDecEntropy.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecEntropy.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecEntropy.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecEntropy.cpp.s
 
 source/Lib/TLibDecoder/TDecGop.o: source/Lib/TLibDecoder/TDecGop.cpp.o
@@ -1398,7 +1155,7 @@ source/Lib/TLibDecoder/TDecGop.o: source/Lib/TLibDecoder/TDecGop.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecGop.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecGop.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecGop.cpp.o
 
 source/Lib/TLibDecoder/TDecGop.i: source/Lib/TLibDecoder/TDecGop.cpp.i
@@ -1407,7 +1164,7 @@ source/Lib/TLibDecoder/TDecGop.i: source/Lib/TLibDecoder/TDecGop.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecGop.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecGop.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecGop.cpp.i
 
 source/Lib/TLibDecoder/TDecGop.s: source/Lib/TLibDecoder/TDecGop.cpp.s
@@ -1416,7 +1173,7 @@ source/Lib/TLibDecoder/TDecGop.s: source/Lib/TLibDecoder/TDecGop.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecGop.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecGop.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecGop.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecGop.cpp.s
 
 source/Lib/TLibDecoder/TDecSbac.o: source/Lib/TLibDecoder/TDecSbac.cpp.o
@@ -1425,7 +1182,7 @@ source/Lib/TLibDecoder/TDecSbac.o: source/Lib/TLibDecoder/TDecSbac.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecSbac.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecSbac.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecSbac.cpp.o
 
 source/Lib/TLibDecoder/TDecSbac.i: source/Lib/TLibDecoder/TDecSbac.cpp.i
@@ -1434,7 +1191,7 @@ source/Lib/TLibDecoder/TDecSbac.i: source/Lib/TLibDecoder/TDecSbac.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecSbac.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecSbac.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecSbac.cpp.i
 
 source/Lib/TLibDecoder/TDecSbac.s: source/Lib/TLibDecoder/TDecSbac.cpp.s
@@ -1443,7 +1200,7 @@ source/Lib/TLibDecoder/TDecSbac.s: source/Lib/TLibDecoder/TDecSbac.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecSbac.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSbac.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecSbac.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecSbac.cpp.s
 
 source/Lib/TLibDecoder/TDecSlice.o: source/Lib/TLibDecoder/TDecSlice.cpp.o
@@ -1452,7 +1209,7 @@ source/Lib/TLibDecoder/TDecSlice.o: source/Lib/TLibDecoder/TDecSlice.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecSlice.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecSlice.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecSlice.cpp.o
 
 source/Lib/TLibDecoder/TDecSlice.i: source/Lib/TLibDecoder/TDecSlice.cpp.i
@@ -1461,7 +1218,7 @@ source/Lib/TLibDecoder/TDecSlice.i: source/Lib/TLibDecoder/TDecSlice.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecSlice.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecSlice.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecSlice.cpp.i
 
 source/Lib/TLibDecoder/TDecSlice.s: source/Lib/TLibDecoder/TDecSlice.cpp.s
@@ -1470,7 +1227,7 @@ source/Lib/TLibDecoder/TDecSlice.s: source/Lib/TLibDecoder/TDecSlice.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecSlice.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecSlice.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecSlice.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecSlice.cpp.s
 
 source/Lib/TLibDecoder/TDecTop.o: source/Lib/TLibDecoder/TDecTop.cpp.o
@@ -1479,7 +1236,7 @@ source/Lib/TLibDecoder/TDecTop.o: source/Lib/TLibDecoder/TDecTop.cpp.o
 
 # target to build an object file
 source/Lib/TLibDecoder/TDecTop.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecTop.cpp.o
 .PHONY : source/Lib/TLibDecoder/TDecTop.cpp.o
 
 source/Lib/TLibDecoder/TDecTop.i: source/Lib/TLibDecoder/TDecTop.cpp.i
@@ -1488,7 +1245,7 @@ source/Lib/TLibDecoder/TDecTop.i: source/Lib/TLibDecoder/TDecTop.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibDecoder/TDecTop.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecTop.cpp.i
 .PHONY : source/Lib/TLibDecoder/TDecTop.cpp.i
 
 source/Lib/TLibDecoder/TDecTop.s: source/Lib/TLibDecoder/TDecTop.cpp.s
@@ -1497,7 +1254,7 @@ source/Lib/TLibDecoder/TDecTop.s: source/Lib/TLibDecoder/TDecTop.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibDecoder/TDecTop.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibDecoder/TDecTop.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibDecoder/TDecTop.cpp.s
 .PHONY : source/Lib/TLibDecoder/TDecTop.cpp.s
 
 source/Lib/TLibEncoder/NALwrite.o: source/Lib/TLibEncoder/NALwrite.cpp.o
@@ -1506,7 +1263,7 @@ source/Lib/TLibEncoder/NALwrite.o: source/Lib/TLibEncoder/NALwrite.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/NALwrite.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/NALwrite.cpp.o
 .PHONY : source/Lib/TLibEncoder/NALwrite.cpp.o
 
 source/Lib/TLibEncoder/NALwrite.i: source/Lib/TLibEncoder/NALwrite.cpp.i
@@ -1515,7 +1272,7 @@ source/Lib/TLibEncoder/NALwrite.i: source/Lib/TLibEncoder/NALwrite.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/NALwrite.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/NALwrite.cpp.i
 .PHONY : source/Lib/TLibEncoder/NALwrite.cpp.i
 
 source/Lib/TLibEncoder/NALwrite.s: source/Lib/TLibEncoder/NALwrite.cpp.s
@@ -1524,7 +1281,7 @@ source/Lib/TLibEncoder/NALwrite.s: source/Lib/TLibEncoder/NALwrite.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/NALwrite.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/NALwrite.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/NALwrite.cpp.s
 .PHONY : source/Lib/TLibEncoder/NALwrite.cpp.s
 
 source/Lib/TLibEncoder/SEIEncoder.o: source/Lib/TLibEncoder/SEIEncoder.cpp.o
@@ -1533,7 +1290,7 @@ source/Lib/TLibEncoder/SEIEncoder.o: source/Lib/TLibEncoder/SEIEncoder.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/SEIEncoder.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.o
 .PHONY : source/Lib/TLibEncoder/SEIEncoder.cpp.o
 
 source/Lib/TLibEncoder/SEIEncoder.i: source/Lib/TLibEncoder/SEIEncoder.cpp.i
@@ -1542,7 +1299,7 @@ source/Lib/TLibEncoder/SEIEncoder.i: source/Lib/TLibEncoder/SEIEncoder.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/SEIEncoder.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.i
 .PHONY : source/Lib/TLibEncoder/SEIEncoder.cpp.i
 
 source/Lib/TLibEncoder/SEIEncoder.s: source/Lib/TLibEncoder/SEIEncoder.cpp.s
@@ -1551,7 +1308,7 @@ source/Lib/TLibEncoder/SEIEncoder.s: source/Lib/TLibEncoder/SEIEncoder.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/SEIEncoder.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SEIEncoder.cpp.s
 .PHONY : source/Lib/TLibEncoder/SEIEncoder.cpp.s
 
 source/Lib/TLibEncoder/SEIwrite.o: source/Lib/TLibEncoder/SEIwrite.cpp.o
@@ -1560,7 +1317,7 @@ source/Lib/TLibEncoder/SEIwrite.o: source/Lib/TLibEncoder/SEIwrite.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/SEIwrite.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SEIwrite.cpp.o
 .PHONY : source/Lib/TLibEncoder/SEIwrite.cpp.o
 
 source/Lib/TLibEncoder/SEIwrite.i: source/Lib/TLibEncoder/SEIwrite.cpp.i
@@ -1569,7 +1326,7 @@ source/Lib/TLibEncoder/SEIwrite.i: source/Lib/TLibEncoder/SEIwrite.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/SEIwrite.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SEIwrite.cpp.i
 .PHONY : source/Lib/TLibEncoder/SEIwrite.cpp.i
 
 source/Lib/TLibEncoder/SEIwrite.s: source/Lib/TLibEncoder/SEIwrite.cpp.s
@@ -1578,7 +1335,7 @@ source/Lib/TLibEncoder/SEIwrite.s: source/Lib/TLibEncoder/SEIwrite.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/SEIwrite.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SEIwrite.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SEIwrite.cpp.s
 .PHONY : source/Lib/TLibEncoder/SEIwrite.cpp.s
 
 source/Lib/TLibEncoder/SyntaxElementWriter.o: source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o
@@ -1587,7 +1344,7 @@ source/Lib/TLibEncoder/SyntaxElementWriter.o: source/Lib/TLibEncoder/SyntaxEleme
 
 # target to build an object file
 source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o
 .PHONY : source/Lib/TLibEncoder/SyntaxElementWriter.cpp.o
 
 source/Lib/TLibEncoder/SyntaxElementWriter.i: source/Lib/TLibEncoder/SyntaxElementWriter.cpp.i
@@ -1596,7 +1353,7 @@ source/Lib/TLibEncoder/SyntaxElementWriter.i: source/Lib/TLibEncoder/SyntaxEleme
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/SyntaxElementWriter.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.i
 .PHONY : source/Lib/TLibEncoder/SyntaxElementWriter.cpp.i
 
 source/Lib/TLibEncoder/SyntaxElementWriter.s: source/Lib/TLibEncoder/SyntaxElementWriter.cpp.s
@@ -1605,7 +1362,7 @@ source/Lib/TLibEncoder/SyntaxElementWriter.s: source/Lib/TLibEncoder/SyntaxEleme
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/SyntaxElementWriter.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/SyntaxElementWriter.cpp.s
 .PHONY : source/Lib/TLibEncoder/SyntaxElementWriter.cpp.s
 
 source/Lib/TLibEncoder/TEncBinCoderCABAC.o: source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o
@@ -1614,7 +1371,7 @@ source/Lib/TLibEncoder/TEncBinCoderCABAC.o: source/Lib/TLibEncoder/TEncBinCoderC
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.o
 
 source/Lib/TLibEncoder/TEncBinCoderCABAC.i: source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.i
@@ -1623,7 +1380,7 @@ source/Lib/TLibEncoder/TEncBinCoderCABAC.i: source/Lib/TLibEncoder/TEncBinCoderC
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.i
 
 source/Lib/TLibEncoder/TEncBinCoderCABAC.s: source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.s
@@ -1632,7 +1389,7 @@ source/Lib/TLibEncoder/TEncBinCoderCABAC.s: source/Lib/TLibEncoder/TEncBinCoderC
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp.s
 
 source/Lib/TLibEncoder/TEncBinCoderCABACCounter.o: source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o
@@ -1641,7 +1398,7 @@ source/Lib/TLibEncoder/TEncBinCoderCABACCounter.o: source/Lib/TLibEncoder/TEncBi
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.o
 
 source/Lib/TLibEncoder/TEncBinCoderCABACCounter.i: source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.i
@@ -1650,7 +1407,7 @@ source/Lib/TLibEncoder/TEncBinCoderCABACCounter.i: source/Lib/TLibEncoder/TEncBi
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.i
 
 source/Lib/TLibEncoder/TEncBinCoderCABACCounter.s: source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.s
@@ -1659,7 +1416,7 @@ source/Lib/TLibEncoder/TEncBinCoderCABACCounter.s: source/Lib/TLibEncoder/TEncBi
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp.s
 
 source/Lib/TLibEncoder/TEncCavlc.o: source/Lib/TLibEncoder/TEncCavlc.cpp.o
@@ -1668,7 +1425,7 @@ source/Lib/TLibEncoder/TEncCavlc.o: source/Lib/TLibEncoder/TEncCavlc.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncCavlc.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncCavlc.cpp.o
 
 source/Lib/TLibEncoder/TEncCavlc.i: source/Lib/TLibEncoder/TEncCavlc.cpp.i
@@ -1677,7 +1434,7 @@ source/Lib/TLibEncoder/TEncCavlc.i: source/Lib/TLibEncoder/TEncCavlc.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncCavlc.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncCavlc.cpp.i
 
 source/Lib/TLibEncoder/TEncCavlc.s: source/Lib/TLibEncoder/TEncCavlc.cpp.s
@@ -1686,7 +1443,7 @@ source/Lib/TLibEncoder/TEncCavlc.s: source/Lib/TLibEncoder/TEncCavlc.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncCavlc.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncCavlc.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncCavlc.cpp.s
 
 source/Lib/TLibEncoder/TEncCu.o: source/Lib/TLibEncoder/TEncCu.cpp.o
@@ -1695,7 +1452,7 @@ source/Lib/TLibEncoder/TEncCu.o: source/Lib/TLibEncoder/TEncCu.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncCu.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncCu.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncCu.cpp.o
 
 source/Lib/TLibEncoder/TEncCu.i: source/Lib/TLibEncoder/TEncCu.cpp.i
@@ -1704,7 +1461,7 @@ source/Lib/TLibEncoder/TEncCu.i: source/Lib/TLibEncoder/TEncCu.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncCu.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncCu.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncCu.cpp.i
 
 source/Lib/TLibEncoder/TEncCu.s: source/Lib/TLibEncoder/TEncCu.cpp.s
@@ -1713,7 +1470,7 @@ source/Lib/TLibEncoder/TEncCu.s: source/Lib/TLibEncoder/TEncCu.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncCu.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncCu.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncCu.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncCu.cpp.s
 
 source/Lib/TLibEncoder/TEncEntropy.o: source/Lib/TLibEncoder/TEncEntropy.cpp.o
@@ -1722,7 +1479,7 @@ source/Lib/TLibEncoder/TEncEntropy.o: source/Lib/TLibEncoder/TEncEntropy.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncEntropy.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncEntropy.cpp.o
 
 source/Lib/TLibEncoder/TEncEntropy.i: source/Lib/TLibEncoder/TEncEntropy.cpp.i
@@ -1731,7 +1488,7 @@ source/Lib/TLibEncoder/TEncEntropy.i: source/Lib/TLibEncoder/TEncEntropy.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncEntropy.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncEntropy.cpp.i
 
 source/Lib/TLibEncoder/TEncEntropy.s: source/Lib/TLibEncoder/TEncEntropy.cpp.s
@@ -1740,7 +1497,7 @@ source/Lib/TLibEncoder/TEncEntropy.s: source/Lib/TLibEncoder/TEncEntropy.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncEntropy.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncEntropy.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncEntropy.cpp.s
 
 source/Lib/TLibEncoder/TEncGOP.o: source/Lib/TLibEncoder/TEncGOP.cpp.o
@@ -1749,7 +1506,7 @@ source/Lib/TLibEncoder/TEncGOP.o: source/Lib/TLibEncoder/TEncGOP.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncGOP.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncGOP.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncGOP.cpp.o
 
 source/Lib/TLibEncoder/TEncGOP.i: source/Lib/TLibEncoder/TEncGOP.cpp.i
@@ -1758,7 +1515,7 @@ source/Lib/TLibEncoder/TEncGOP.i: source/Lib/TLibEncoder/TEncGOP.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncGOP.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncGOP.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncGOP.cpp.i
 
 source/Lib/TLibEncoder/TEncGOP.s: source/Lib/TLibEncoder/TEncGOP.cpp.s
@@ -1767,7 +1524,7 @@ source/Lib/TLibEncoder/TEncGOP.s: source/Lib/TLibEncoder/TEncGOP.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncGOP.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncGOP.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncGOP.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncGOP.cpp.s
 
 source/Lib/TLibEncoder/TEncPic.o: source/Lib/TLibEncoder/TEncPic.cpp.o
@@ -1776,7 +1533,7 @@ source/Lib/TLibEncoder/TEncPic.o: source/Lib/TLibEncoder/TEncPic.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncPic.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncPic.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncPic.cpp.o
 
 source/Lib/TLibEncoder/TEncPic.i: source/Lib/TLibEncoder/TEncPic.cpp.i
@@ -1785,7 +1542,7 @@ source/Lib/TLibEncoder/TEncPic.i: source/Lib/TLibEncoder/TEncPic.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncPic.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncPic.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncPic.cpp.i
 
 source/Lib/TLibEncoder/TEncPic.s: source/Lib/TLibEncoder/TEncPic.cpp.s
@@ -1794,7 +1551,7 @@ source/Lib/TLibEncoder/TEncPic.s: source/Lib/TLibEncoder/TEncPic.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncPic.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPic.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncPic.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncPic.cpp.s
 
 source/Lib/TLibEncoder/TEncPreanalyzer.o: source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o
@@ -1803,7 +1560,7 @@ source/Lib/TLibEncoder/TEncPreanalyzer.o: source/Lib/TLibEncoder/TEncPreanalyzer
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncPreanalyzer.cpp.o
 
 source/Lib/TLibEncoder/TEncPreanalyzer.i: source/Lib/TLibEncoder/TEncPreanalyzer.cpp.i
@@ -1812,7 +1569,7 @@ source/Lib/TLibEncoder/TEncPreanalyzer.i: source/Lib/TLibEncoder/TEncPreanalyzer
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncPreanalyzer.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncPreanalyzer.cpp.i
 
 source/Lib/TLibEncoder/TEncPreanalyzer.s: source/Lib/TLibEncoder/TEncPreanalyzer.cpp.s
@@ -1821,7 +1578,7 @@ source/Lib/TLibEncoder/TEncPreanalyzer.s: source/Lib/TLibEncoder/TEncPreanalyzer
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncPreanalyzer.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncPreanalyzer.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncPreanalyzer.cpp.s
 
 source/Lib/TLibEncoder/TEncRateCtrl.o: source/Lib/TLibEncoder/TEncRateCtrl.cpp.o
@@ -1830,7 +1587,7 @@ source/Lib/TLibEncoder/TEncRateCtrl.o: source/Lib/TLibEncoder/TEncRateCtrl.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncRateCtrl.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncRateCtrl.cpp.o
 
 source/Lib/TLibEncoder/TEncRateCtrl.i: source/Lib/TLibEncoder/TEncRateCtrl.cpp.i
@@ -1839,7 +1596,7 @@ source/Lib/TLibEncoder/TEncRateCtrl.i: source/Lib/TLibEncoder/TEncRateCtrl.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncRateCtrl.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncRateCtrl.cpp.i
 
 source/Lib/TLibEncoder/TEncRateCtrl.s: source/Lib/TLibEncoder/TEncRateCtrl.cpp.s
@@ -1848,7 +1605,7 @@ source/Lib/TLibEncoder/TEncRateCtrl.s: source/Lib/TLibEncoder/TEncRateCtrl.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncRateCtrl.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncRateCtrl.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncRateCtrl.cpp.s
 
 source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.o: source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o
@@ -1857,7 +1614,7 @@ source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.o: source/Lib/TLibEncoder/TEncSa
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.o
 
 source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.i: source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.i
@@ -1866,7 +1623,7 @@ source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.i: source/Lib/TLibEncoder/TEncSa
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.i
 
 source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.s: source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.s
@@ -1875,7 +1632,7 @@ source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.s: source/Lib/TLibEncoder/TEncSa
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp.s
 
 source/Lib/TLibEncoder/TEncSbac.o: source/Lib/TLibEncoder/TEncSbac.cpp.o
@@ -1884,7 +1641,7 @@ source/Lib/TLibEncoder/TEncSbac.o: source/Lib/TLibEncoder/TEncSbac.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncSbac.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSbac.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncSbac.cpp.o
 
 source/Lib/TLibEncoder/TEncSbac.i: source/Lib/TLibEncoder/TEncSbac.cpp.i
@@ -1893,7 +1650,7 @@ source/Lib/TLibEncoder/TEncSbac.i: source/Lib/TLibEncoder/TEncSbac.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncSbac.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSbac.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncSbac.cpp.i
 
 source/Lib/TLibEncoder/TEncSbac.s: source/Lib/TLibEncoder/TEncSbac.cpp.s
@@ -1902,7 +1659,7 @@ source/Lib/TLibEncoder/TEncSbac.s: source/Lib/TLibEncoder/TEncSbac.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncSbac.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSbac.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSbac.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncSbac.cpp.s
 
 source/Lib/TLibEncoder/TEncSearch.o: source/Lib/TLibEncoder/TEncSearch.cpp.o
@@ -1911,7 +1668,7 @@ source/Lib/TLibEncoder/TEncSearch.o: source/Lib/TLibEncoder/TEncSearch.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSearch.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncSearch.cpp.o
 
 source/Lib/TLibEncoder/TEncSearch.i: source/Lib/TLibEncoder/TEncSearch.cpp.i
@@ -1920,7 +1677,7 @@ source/Lib/TLibEncoder/TEncSearch.i: source/Lib/TLibEncoder/TEncSearch.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSearch.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncSearch.cpp.i
 
 source/Lib/TLibEncoder/TEncSearch.s: source/Lib/TLibEncoder/TEncSearch.cpp.s
@@ -1929,7 +1686,7 @@ source/Lib/TLibEncoder/TEncSearch.s: source/Lib/TLibEncoder/TEncSearch.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSearch.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSearch.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncSearch.cpp.s
 
 source/Lib/TLibEncoder/TEncSlice.o: source/Lib/TLibEncoder/TEncSlice.cpp.o
@@ -1938,7 +1695,7 @@ source/Lib/TLibEncoder/TEncSlice.o: source/Lib/TLibEncoder/TEncSlice.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncSlice.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSlice.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncSlice.cpp.o
 
 source/Lib/TLibEncoder/TEncSlice.i: source/Lib/TLibEncoder/TEncSlice.cpp.i
@@ -1947,7 +1704,7 @@ source/Lib/TLibEncoder/TEncSlice.i: source/Lib/TLibEncoder/TEncSlice.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncSlice.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSlice.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncSlice.cpp.i
 
 source/Lib/TLibEncoder/TEncSlice.s: source/Lib/TLibEncoder/TEncSlice.cpp.s
@@ -1956,7 +1713,7 @@ source/Lib/TLibEncoder/TEncSlice.s: source/Lib/TLibEncoder/TEncSlice.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncSlice.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncSlice.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncSlice.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncSlice.cpp.s
 
 source/Lib/TLibEncoder/TEncTop.o: source/Lib/TLibEncoder/TEncTop.cpp.o
@@ -1965,7 +1722,7 @@ source/Lib/TLibEncoder/TEncTop.o: source/Lib/TLibEncoder/TEncTop.cpp.o
 
 # target to build an object file
 source/Lib/TLibEncoder/TEncTop.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncTop.cpp.o
 .PHONY : source/Lib/TLibEncoder/TEncTop.cpp.o
 
 source/Lib/TLibEncoder/TEncTop.i: source/Lib/TLibEncoder/TEncTop.cpp.i
@@ -1974,7 +1731,7 @@ source/Lib/TLibEncoder/TEncTop.i: source/Lib/TLibEncoder/TEncTop.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/TEncTop.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncTop.cpp.i
 .PHONY : source/Lib/TLibEncoder/TEncTop.cpp.i
 
 source/Lib/TLibEncoder/TEncTop.s: source/Lib/TLibEncoder/TEncTop.cpp.s
@@ -1983,7 +1740,7 @@ source/Lib/TLibEncoder/TEncTop.s: source/Lib/TLibEncoder/TEncTop.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/TEncTop.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/TEncTop.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/TEncTop.cpp.s
 .PHONY : source/Lib/TLibEncoder/TEncTop.cpp.s
 
 source/Lib/TLibEncoder/WeightPredAnalysis.o: source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o
@@ -1992,7 +1749,7 @@ source/Lib/TLibEncoder/WeightPredAnalysis.o: source/Lib/TLibEncoder/WeightPredAn
 
 # target to build an object file
 source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o
 .PHONY : source/Lib/TLibEncoder/WeightPredAnalysis.cpp.o
 
 source/Lib/TLibEncoder/WeightPredAnalysis.i: source/Lib/TLibEncoder/WeightPredAnalysis.cpp.i
@@ -2001,7 +1758,7 @@ source/Lib/TLibEncoder/WeightPredAnalysis.i: source/Lib/TLibEncoder/WeightPredAn
 
 # target to preprocess a source file
 source/Lib/TLibEncoder/WeightPredAnalysis.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.i
 .PHONY : source/Lib/TLibEncoder/WeightPredAnalysis.cpp.i
 
 source/Lib/TLibEncoder/WeightPredAnalysis.s: source/Lib/TLibEncoder/WeightPredAnalysis.cpp.s
@@ -2010,7 +1767,7 @@ source/Lib/TLibEncoder/WeightPredAnalysis.s: source/Lib/TLibEncoder/WeightPredAn
 
 # target to generate assembly for a file
 source/Lib/TLibEncoder/WeightPredAnalysis.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibEncoder/WeightPredAnalysis.cpp.s
 .PHONY : source/Lib/TLibEncoder/WeightPredAnalysis.cpp.s
 
 source/Lib/TLibVideoIO/TVideoIOYuv.o: source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o
@@ -2019,7 +1776,7 @@ source/Lib/TLibVideoIO/TVideoIOYuv.o: source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o
 
 # target to build an object file
 source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o
 .PHONY : source/Lib/TLibVideoIO/TVideoIOYuv.cpp.o
 
 source/Lib/TLibVideoIO/TVideoIOYuv.i: source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i
@@ -2028,7 +1785,7 @@ source/Lib/TLibVideoIO/TVideoIOYuv.i: source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i
 
 # target to preprocess a source file
 source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i
 .PHONY : source/Lib/TLibVideoIO/TVideoIOYuv.cpp.i
 
 source/Lib/TLibVideoIO/TVideoIOYuv.s: source/Lib/TLibVideoIO/TVideoIOYuv.cpp.s
@@ -2037,7 +1794,7 @@ source/Lib/TLibVideoIO/TVideoIOYuv.s: source/Lib/TLibVideoIO/TVideoIOYuv.cpp.s
 
 # target to generate assembly for a file
 source/Lib/TLibVideoIO/TVideoIOYuv.cpp.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/TLibVideoIO/TVideoIOYuv.cpp.s
 .PHONY : source/Lib/TLibVideoIO/TVideoIOYuv.cpp.s
 
 source/Lib/libmd5/libmd5.o: source/Lib/libmd5/libmd5.c.o
@@ -2046,7 +1803,7 @@ source/Lib/libmd5/libmd5.o: source/Lib/libmd5/libmd5.c.o
 
 # target to build an object file
 source/Lib/libmd5/libmd5.c.o:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.o
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/libmd5/libmd5.c.o
 .PHONY : source/Lib/libmd5/libmd5.c.o
 
 source/Lib/libmd5/libmd5.i: source/Lib/libmd5/libmd5.c.i
@@ -2055,7 +1812,7 @@ source/Lib/libmd5/libmd5.i: source/Lib/libmd5/libmd5.c.i
 
 # target to preprocess a source file
 source/Lib/libmd5/libmd5.c.i:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.i
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/libmd5/libmd5.c.i
 .PHONY : source/Lib/libmd5/libmd5.c.i
 
 source/Lib/libmd5/libmd5.s: source/Lib/libmd5/libmd5.c.s
@@ -2064,7 +1821,7 @@ source/Lib/libmd5/libmd5.s: source/Lib/libmd5/libmd5.c.s
 
 # target to generate assembly for a file
 source/Lib/libmd5/libmd5.c.s:
-	$(MAKE) -f CMakeFiles/HM_16_14.dir/build.make CMakeFiles/HM_16_14.dir/source/Lib/libmd5/libmd5.c.s
+	$(MAKE) -f CMakeFiles/HM_16_14_ENC.dir/build.make CMakeFiles/HM_16_14_ENC.dir/source/Lib/libmd5/libmd5.c.s
 .PHONY : source/Lib/libmd5/libmd5.c.s
 
 # Help Target
@@ -2075,16 +1832,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HM_16_14"
-	@echo "... source/App/TAppDecoder/TAppDecCfg.o"
-	@echo "... source/App/TAppDecoder/TAppDecCfg.i"
-	@echo "... source/App/TAppDecoder/TAppDecCfg.s"
-	@echo "... source/App/TAppDecoder/TAppDecTop.o"
-	@echo "... source/App/TAppDecoder/TAppDecTop.i"
-	@echo "... source/App/TAppDecoder/TAppDecTop.s"
-	@echo "... source/App/TAppDecoder/decmain.o"
-	@echo "... source/App/TAppDecoder/decmain.i"
-	@echo "... source/App/TAppDecoder/decmain.s"
+	@echo "... HM_16_14_ENC"
 	@echo "... source/App/TAppEncoder/TAppEncCfg.o"
 	@echo "... source/App/TAppEncoder/TAppEncCfg.i"
 	@echo "... source/App/TAppEncoder/TAppEncCfg.s"
@@ -2094,24 +1842,6 @@ help:
 	@echo "... source/App/TAppEncoder/encmain.o"
 	@echo "... source/App/TAppEncoder/encmain.i"
 	@echo "... source/App/TAppEncoder/encmain.s"
-	@echo "... source/App/utils/BitrateTargeting/ExtractBitrates.o"
-	@echo "... source/App/utils/BitrateTargeting/ExtractBitrates.i"
-	@echo "... source/App/utils/BitrateTargeting/ExtractBitrates.s"
-	@echo "... source/App/utils/BitrateTargeting/ExtractBitratesMain.o"
-	@echo "... source/App/utils/BitrateTargeting/ExtractBitratesMain.i"
-	@echo "... source/App/utils/BitrateTargeting/ExtractBitratesMain.s"
-	@echo "... source/App/utils/BitrateTargeting/GuessLambdaModifiers.o"
-	@echo "... source/App/utils/BitrateTargeting/GuessLambdaModifiers.i"
-	@echo "... source/App/utils/BitrateTargeting/GuessLambdaModifiers.s"
-	@echo "... source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.o"
-	@echo "... source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.i"
-	@echo "... source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.s"
-	@echo "... source/App/utils/annexBbytecount.o"
-	@echo "... source/App/utils/annexBbytecount.i"
-	@echo "... source/App/utils/annexBbytecount.s"
-	@echo "... source/App/utils/convert_NtoMbit_YCbCr.o"
-	@echo "... source/App/utils/convert_NtoMbit_YCbCr.i"
-	@echo "... source/App/utils/convert_NtoMbit_YCbCr.s"
 	@echo "... source/Lib/TAppCommon/program_options_lite.o"
 	@echo "... source/Lib/TAppCommon/program_options_lite.i"
 	@echo "... source/Lib/TAppCommon/program_options_lite.s"

@@ -5,32 +5,29 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(source/Lib/ source/App/)
 
-### src files for other apps than encoder
-#        source/App/TAppDecoder/decmain.cpp
-#        source/App/TAppDecoder/TAppDecCfg.cpp
-#        source/App/TAppDecoder/TAppDecCfg.h
-#        source/App/TAppDecoder/TAppDecTop.cpp
-#        source/App/TAppDecoder/TAppDecTop.h
-#        source/App/utils/BitrateTargeting/ExtractBitrates.cpp
-#        source/App/utils/BitrateTargeting/ExtractBitrates.h
-#        source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp
-#        source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp
-#        source/App/utils/BitrateTargeting/GuessLambdaModifiers.h
-#        source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp
-#        source/App/utils/BitrateTargeting/RuntimeError.h
-#        source/App/utils/annexBbytecount.cpp
-#        source/App/utils/convert_NtoMbit_YCbCr.cpp
-
-set(SOURCE_FILES_ENCODER
-        source/App/TAppEncoder/encmain.cpp
-        source/App/TAppEncoder/TAppEncCfg.cpp
-        source/App/TAppEncoder/TAppEncCfg.h
-        source/App/TAppEncoder/TAppEncTop.cpp
-        source/App/TAppEncoder/TAppEncTop.h)
 
 set(SOURCE_FILES
         compat/msvc/stdint.h
         doc/mainpage.h
+        source/App/TAppDecoder/decmain.cpp
+        source/App/TAppDecoder/TAppDecCfg.cpp
+        source/App/TAppDecoder/TAppDecCfg.h
+        source/App/TAppDecoder/TAppDecTop.cpp
+        source/App/TAppDecoder/TAppDecTop.h
+        source/App/TAppEncoder/encmain.cpp
+        source/App/TAppEncoder/TAppEncCfg.cpp
+        source/App/TAppEncoder/TAppEncCfg.h
+        source/App/TAppEncoder/TAppEncTop.cpp
+        source/App/TAppEncoder/TAppEncTop.h
+        source/App/utils/BitrateTargeting/ExtractBitrates.cpp
+        source/App/utils/BitrateTargeting/ExtractBitrates.h
+        source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp
+        source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp
+        source/App/utils/BitrateTargeting/GuessLambdaModifiers.h
+        source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp
+        source/App/utils/BitrateTargeting/RuntimeError.h
+        source/App/utils/annexBbytecount.cpp
+        source/App/utils/convert_NtoMbit_YCbCr.cpp
         source/Lib/libmd5/libmd5.c
         source/Lib/libmd5/libmd5.h
         source/Lib/libmd5/MD5.h
@@ -167,4 +164,4 @@ set(SOURCE_FILES
         source/Lib/TLibVideoIO/TVideoIOYuv.cpp
         source/Lib/TLibVideoIO/TVideoIOYuv.h)
 
-add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES_ENCODER})
+add_executable(HM_16_14 ${SOURCE_FILES})
