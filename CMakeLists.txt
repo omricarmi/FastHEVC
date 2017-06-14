@@ -3,6 +3,9 @@ project(HM_16_14)
 
 set(CMAKE_CXX_STANDARD 11)
 
+include_directories(source/Lib/ source/App/)
+
+
 set(SOURCE_FILES
         compat/msvc/stdint.h
         doc/mainpage.h

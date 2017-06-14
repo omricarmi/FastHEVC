@@ -7,11 +7,11 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I"/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib" -I"/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App" 
 
 CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/Lib" -I"/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App" 
 

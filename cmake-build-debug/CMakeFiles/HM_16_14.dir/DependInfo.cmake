@@ -11,6 +11,8 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../source/Lib"
+  "../source/App"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/source/App/TAppDecoder/TAppDecCfg.cpp" "/Users/omricarmi/Technion/Project A/T-REC-H/Software/HM-16.14/cmake-build-debug/CMakeFiles/HM_16_14.dir/source/App/TAppDecoder/TAppDecCfg.cpp.o"
@@ -89,6 +91,8 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../source/Lib"
+  "../source/App"
   )
 
 # Targets to which this target links.
