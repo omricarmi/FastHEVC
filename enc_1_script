@@ -1,5 +1,0 @@
-#!/bin/bash
-srcYUV=/Users/omricarmi/Technion/ProjectA/ITUVideos/BasketballDrill_832x480_50.yuv
-outBIN=/Users/omricarmi/Technion/ProjectA/outputVideos/test1.bin
-cfgFile=/Users/omricarmi/Technion/ProjectA/code/FastHEVC/cfg/custom/BasketballDrill_encoder_intra_main.cfg
-cmake-build-debug/HM_16_14_ENC -c ${cfgFILE} -i ${srcYUV} -b ${outBIN}
