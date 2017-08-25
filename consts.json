@@ -1,4 +1,24 @@
 {
-  "ITU_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/ITUVideos/",
-  "OUTPUT_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/ITUVideos/"
+  "ITU_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/ITUVideos",
+  "ENC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/encVideos",
+  "REC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/recVideos",
+  "videos": [
+    {
+      "file_name":"BasketballDrill_832x480_50.yuv",
+      "cfg_file":"BasketballDrill_encoder_intra_main.cfg"
+    },
+    {
+      "file_name":"PartyScene_832x480_50.yuv",
+      "cfg_file":"PartyScene_encoder_intra_main.cfg"
+    },
+    {
+      "file_name":"ParkScene_1920x1080_24.yuv",
+      "cfg_file":"ParkScene_encoder_intra_main.cfg"
+    },
+    {
+      "file_name":"BasketballPass_416x240_50.yuv",
+      "cfg_file":"BasketballPass_encoder_intra_main.cfg"
+    }
+
+  ]
 }

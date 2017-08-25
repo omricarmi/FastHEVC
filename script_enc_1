@@ -1,8 +1,31 @@
 #!/usr/bin/python
 import os
-SRC_YUV="/Users/omricarmi/Technion/ProjectA/ITUVideos/BasketballDrill_832x480_50.yuv"
-OUT_BIN="/Users/omricarmi/Technion/ProjectA/outputVideos/test1.bin"
-CFG_FILE="/Users/omricarmi/Technion/ProjectA/code/FastHEVC/cfg/custom/BasketballDrill_encoder_intra_main.cfg"
-os.system("cmake-build-debug/HM_16_14_ENC -c "+CFG_FILE+" -i "+SRC_YUV+" -b "+OUT_BIN)
+import json
+
+# read consts file
+with open('consts.json', 'r') as constsFile:
+    consts = json.load(constsFile)
+
+
+VIDEOS_LEN = len(consts["videos"])
+VIDEO_NUM = -1;
+while (VIDEO_NUM < 0) or (VIDEO_NUM > VIDEOS_LEN-1):
+    # ask user to select video to encode
+    print("Please select video to encode (1-" + str(VIDEOS_LEN) + "):")
+    # show videos list
+    for i in range(0,VIDEOS_LEN):
+        print(str(i+1) + ") " + consts["videos"][i]["file_name"])
+    # get user selection
+    VIDEO_NUM = input() - 1;
+
+#prepare params for execution
+SRC_YUV = consts["ITU_VIDEO_PATH"] + "/" + consts["videos"][VIDEO_NUM]["file_name"]
+OUT_BIN = consts["ENC_VIDEO_PATH"] + "/" + consts["videos"][VIDEO_NUM]["file_name"][:-4] + "_encoded.bin"
+CFG_FILE = "./cfg/custom/" + consts["videos"][VIDEO_NUM]["cfg_file"]
+
+#execute encoder
+COMMAND = "./cmake-build-debug/HM_16_14_ENC -c " + CFG_FILE + " -i " + SRC_YUV + " -b " + OUT_BIN;
+os.system(COMMAND)
+
 # in bash syntax it was like this
 # cmake-build-debug/HM_16_14_ENC -c ${CFG_FILE} -i ${SRC_YUV} -b ${OUT_BIN}
