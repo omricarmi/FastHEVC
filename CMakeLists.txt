@@ -21,6 +21,13 @@ include_directories(source/Lib/ source/App/)
 #        source/App/utils/annexBbytecount.cpp
 #        source/App/utils/convert_NtoMbit_YCbCr.cpp
 
+set(SOURCE_FILES_DECODER
+        source/App/TAppDecoder/decmain.cpp
+        source/App/TAppDecoder/TAppDecCfg.cpp
+        source/App/TAppDecoder/TAppDecCfg.h
+        source/App/TAppDecoder/TAppDecTop.cpp
+        source/App/TAppDecoder/TAppDecTop.h)
+
 set(SOURCE_FILES_ENCODER
         source/App/TAppEncoder/encmain.cpp
         source/App/TAppEncoder/TAppEncCfg.cpp
@@ -168,3 +175,4 @@ set(SOURCE_FILES
         source/Lib/TLibVideoIO/TVideoIOYuv.h)
 
 add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES_ENCODER})
+add_executable(HM_16_14_DEC ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
