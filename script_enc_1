@@ -1,8 +1,12 @@
 #!/usr/bin/python
 import os
-SRC_YUV="/Users/omricarmi/Technion/ProjectA/ITUVideos/BasketballDrill_832x480_50.yuv"
-OUT_BIN="/Users/omricarmi/Technion/ProjectA/outputVideos/test1.bin"
-CFG_FILE="/Users/omricarmi/Technion/ProjectA/code/FastHEVC/cfg/custom/BasketballDrill_encoder_intra_main.cfg"
-os.system("cmake-build-debug/HM_16_14_ENC -c "+CFG_FILE+" -i "+SRC_YUV+" -b "+OUT_BIN)
+import json
+with open('consts.json', 'r') as constsFile:
+    consts = json.load(constsFile)
+SRC_YUV = consts["ITU_VIDEO_PATH"] + "/BasketballDrill_832x480_50.yuv"
+OUT_BIN = consts["OUTPUT_VIDEO_PATH"] + "/test1.bin"
+CFG_FILE = "./cfg/custom/BasketballDrill_encoder_intra_main.cfg"
+COMMAND = "./cmake-build-debug/HM_16_14_ENC -c " + CFG_FILE + " -i " + SRC_YUV + " -b " + OUT_BIN;
+os.system(COMMAND)
 # in bash syntax it was like this
 # cmake-build-debug/HM_16_14_ENC -c ${CFG_FILE} -i ${SRC_YUV} -b ${OUT_BIN}
