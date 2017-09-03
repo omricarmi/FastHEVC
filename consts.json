@@ -1,7 +1,8 @@
 {
-  "ITU_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/ITUVideos",
-  "ENC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/encVideos",
-  "REC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/recVideos",
+  "ITU_VIDEO_PATH" : "C:/Users/harelnh/Desktop/spring2017/project/ITUVideos",
+  "ENC_VIDEO_PATH" : "C:/Users/harelnh/Desktop/spring2017/project/encVideos",
+  "ENC_VIDEO_PATH" : "C:/Users/harelnh/Desktop/spring2017/project/encVideos",
+  "REC_VIDEO_PATH" : "C:/Users/harelnh/Desktop/spring2017/project/recVideos",
   "videos": [
     {
       "file_name":"BasketballDrill_832x480_50.yuv",
