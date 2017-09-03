@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import os
 import json
+import re
 
 # read consts file
 with open('consts.json', 'r') as constsFile:
@@ -22,9 +23,16 @@ while (VIDEO_NUM < 0) or (VIDEO_NUM > VIDEOS_LEN-1):
 SRC_YUV = consts["ITU_VIDEO_PATH"] + "/" + consts["videos"][VIDEO_NUM]["file_name"]
 OUT_BIN = consts["ENC_VIDEO_PATH"] + "/" + consts["videos"][VIDEO_NUM]["file_name"][:-4] + "_encoded.bin"
 CFG_FILE = "./cfg/custom/" + consts["videos"][VIDEO_NUM]["cfg_file"]
+COMMAND = "./cmake-build-debug/HM_16_14_ENC -c " + CFG_FILE + " -i " + SRC_YUV + " -b " + OUT_BIN;
+
+# windows adapter
+if os.system == 'nt':
+    SRC_YUV = re.sub("/","\3",SRC_YUV)
+    OUT_BIN = re.sub("/","\3",OUT_BIN)
+    CFG_FILE = re.sub("/","\3",CFG_FILE)
+    COMMAND = re.sub("/","\3",COMMAND)
 
 #execute encoder
-COMMAND = "./cmake-build-debug/HM_16_14_ENC -c " + CFG_FILE + " -i " + SRC_YUV + " -b " + OUT_BIN;
 os.system(COMMAND)
 
 # in bash syntax it was like this
