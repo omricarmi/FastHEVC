@@ -2,7 +2,12 @@ cmake_minimum_required(VERSION 3.6)
 project(HM_16_14)
 
 set(CMAKE_CXX_STANDARD 11)
-
+if(WIN32)
+    SET(GCC_FLAG
+            -static-libstdc++) #-static-libgcc)
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_FLAG}")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libgcc")
+endif (WIN32)
 include_directories(source/Lib/ source/App/)
 
 ### src files for other apps than encoder
