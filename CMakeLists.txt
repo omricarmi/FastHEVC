@@ -40,6 +40,12 @@ set(SOURCE_FILES_ENCODER
         source/App/TAppEncoder/TAppEncTop.cpp
         source/App/TAppEncoder/TAppEncTop.h)
 
+set(SOURCE_FILES_ANALYZER
+        source/Lib/TLibSysuAnalyzer/TComSysuCuMDTools.cpp
+        source/Lib/TLibSysuAnalyzer/TComSysuCuMDTools.h
+        source/Lib/TLibSysuAnalyzer/TSysuAnalyzerOutput.cpp
+        source/Lib/TLibSysuAnalyzer/TSysuAnalyzerOutput.h)
+
 set(SOURCE_FILES
         compat/msvc/stdint.h
         doc/mainpage.h
@@ -179,5 +185,5 @@ set(SOURCE_FILES
         source/Lib/TLibVideoIO/TVideoIOYuv.cpp
         source/Lib/TLibVideoIO/TVideoIOYuv.h)
 
-add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES_ENCODER})
-add_executable(HM_16_14_DEC ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
+add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER})
+add_executable(HM_16_14_DEC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
