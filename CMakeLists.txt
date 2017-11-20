@@ -1,6 +1,15 @@
 cmake_minimum_required(VERSION 3.6)
 project(HM_16_14)
 
+# Importing OpenCV3 (link it in the end of this file)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# Importing Qt
+find_package ( Qt5 COMPONENTS Qt5QtCore QtCore QTGui QtXml REQUIRED )
+include ( ${QT_USE_FILE} )
+
+
 set(CMAKE_CXX_STANDARD 11)
 if(WIN32)
     SET(GCC_FLAG
@@ -40,11 +49,22 @@ set(SOURCE_FILES_ENCODER
         source/App/TAppEncoder/TAppEncTop.cpp
         source/App/TAppEncoder/TAppEncTop.h)
 
-set(SOURCE_FILES_ANALYZER
-        source/Lib/TLibSysuAnalyzer/TComSysuCuMDTools.cpp
-        source/Lib/TLibSysuAnalyzer/TComSysuCuMDTools.h
-        source/Lib/TLibSysuAnalyzer/TSysuAnalyzerOutput.cpp
-        source/Lib/TLibSysuAnalyzer/TSysuAnalyzerOutput.h)
+set(SOURCE_FILES_HARP
+        Src_HARP/CCallgrind.h
+        Src_HARP/CGlobal.cpp
+        Src_HARP/CGlobal.h
+        Src_HARP/CHelper.h
+        Src_HARP/CLibGlobal.h
+        Src_HARP/CShow.h
+        Src_HARP/CShow_Conversion.h
+        Src_HARP/CShow_PredictionUnits.h
+        Src_HARP/CShow_PredResiReco.h
+        Src_HARP/CShow_RDO.h
+        Src_HARP/CShow_RefIndices.h
+        Src_HARP/CShow_UnitCloseup.h
+        Src_HARP/PyCTU.h
+        Src_HARP/PyFactory.h
+        Src_HARP/PyHelper.h)
 
 set(SOURCE_FILES
         compat/msvc/stdint.h
@@ -185,5 +205,8 @@ set(SOURCE_FILES
         source/Lib/TLibVideoIO/TVideoIOYuv.cpp
         source/Lib/TLibVideoIO/TVideoIOYuv.h)
 
-add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER})
+add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER} ${SOURCE_FILES_HARP})
 add_executable(HM_16_14_DEC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
+
+# Link OpenCV to our encoder target
+target_link_libraries(HM_16_14_ENC ${OpenCV_LIBS})
