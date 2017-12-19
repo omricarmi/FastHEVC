@@ -408,7 +408,9 @@ public:
   Void  create    ();                                         ///< create option handling class
   Void  destroy   ();                                         ///< destroy option handling class
   Bool  parseCfg  ( Int argc, TChar* argv[] );                ///< parse configuration file to fill member variables
-
+    Int       getSourceWidth(){return m_iSourceWidth;}                                 ///< source width in pixel
+    Int       getSourceHeight(){return m_iSourceHeight;}                                  ///< source height in pixel (when interlaced = field height)
+    std::string getSourceFileName(){return m_inputFileName;}
 };// END CLASS DEFINITION TAppEncCfg
 
 //! \}

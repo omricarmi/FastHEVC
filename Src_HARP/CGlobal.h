@@ -16,13 +16,13 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/features2d/features2d.hpp>
 
-#include <QDir>
-#include <QString>
-#include <QFileInfo>
-#include <QApplication>
-#include <QTextEdit>
-
-#include "PyNDArray.h"
+//#include <QDir>
+//#include <QString>
+//#include <QFileInfo>
+//#include <QApplication>
+//#include <QTextEdit>
+//
+//#include "PyNDArray.h"
 #include "HARP_Defines.h"
 #include "CHelper.h"
 
@@ -38,42 +38,44 @@ static bool InitDone = false;
 class CGlobal
 {
 public:
-  string TmpDir; //make sure it ends with "/"
+    string TmpDir; //make sure it ends with "/"
 
-  // ---------------------------
-  // PYTHON
-  // ---------------------------
-  NDArrayConverter *Converter;
+    // ---------------------------
+    // PYTHON
+    // ---------------------------
+//  NDArrayConverter *Converter;
 
-  // ---------------------------
-  // INTERNAL
-  // ---------------------------
-  bool isEncoder;  //PicYuvOrg is not available on decoder side
-  int CurrentCTU;  //encoder continually places current CTU index here
-  int CurrentPOC;  //encoder continually places current POC index here
-  bool initDone;
-  int DimX, DimY;
-  int NumCTUs;
-  int WidthInLCUs;
-  int HeightInLCUs;
+    // ---------------------------
+    // INTERNAL
+    // ---------------------------
+    bool isEncoder;  //PicYuvOrg is not available on decoder side
+    int CurrentCTU;  //encoder continually places current CTU index here
+    int CurrentPOC;  //encoder continually places current POC index here
+    bool initDone;
+    int DimX, DimY;
+    int NumCTUs;
+    int WidthInLCUs;
+    int HeightInLCUs;
 
-  char tmptxt[500];
-  QString FN_InputYUV;
-  QApplication *App;
+    char tmptxt[500];
+//  QString FN_InputYUV;
+//  QApplication *App;
 
-  CGlobal();
-  ~CGlobal();
-  void init_general();
-  void init_python();
-  void initTmpDir();
-  void printVersion();
-  void setCurrentPOC(int POC);
-  int getCurrentPOC();
-  void setCurrentCTU(int CTU);
-  int getCurrentCTU();
+    CGlobal();
+    ~CGlobal();
+    void init_general();
+    void init_python();
+    void initTmpDir();
+    void printVersion();
+    void setCurrentPOC(int POC);
+    int getCurrentPOC();
+    void setCurrentCTU(int CTU);
+    int getCurrentCTU();
 
-  bool isObsCTU();
-  void exportImage(Mat Image, string nickname, bool withPOCIdx = false, bool withCTUIdx = false, bool exportToSinglePics = true);
+//  bool isObsCTU();
+//    void exportImage(Mat Image, string nickname, bool withPOCIdx = false, bool withCTUIdx = false, bool exportToSinglePics = true);
+//    void exportImagePNG(Mat Image,string nickname,string dirName);
+
 };
 
 extern CGlobal Global;

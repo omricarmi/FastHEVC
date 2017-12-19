@@ -270,21 +270,21 @@ Void TEncCu::compressCtu( TComDataCU* pCtu )
     }
 #endif
 
-    UChar* puhDepth = pCtu->getDepth();
-    int arr[256] = {0};
-    for (int i = 0; i < 256; ++i) {
-        arr[LUT[i]] = int(puhDepth[i]);
-    }
-    for (int i = 0; i < 256; ++i) {
-        if(i!=0 && i%16==0){
-            std::cout << std::endl;
-        }
-        std::cout << arr[i] << ",";
-    }
-            std::cout << std::endl;
-            std::cout << std::endl;
-    logCnt = 0;
-    logCUInfo(pCtu,pCtu->getTotalNumPart(),0,0);
+//    UChar* puhDepth = pCtu->getDepth();
+//    int arr[256] = {0};
+//    for (int i = 0; i < 256; ++i) {
+//        arr[LUT[i]] = int(puhDepth[i]);
+//    }
+//    for (int i = 0; i < 256; ++i) {
+//        if(i!=0 && i%16==0){
+//            std::cout << std::endl;
+//        }
+//        std::cout << arr[i] << ",";
+//    }
+//            std::cout << std::endl;
+//            std::cout << std::endl;
+//    logCnt = 0;
+//    logCUInfo(pCtu,pCtu->getTotalNumPart(),0,0);
 }
 
 /****************************/

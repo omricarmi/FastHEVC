@@ -783,6 +783,16 @@ typedef struct _LFCUParam
 } LFCUParam;
 
 
+/// texture component type
+enum TextType
+{
+    TEXT_LUMA,            ///< luma
+    TEXT_CHROMA,          ///< chroma (U+V)
+    TEXT_CHROMA_U,        ///< chroma U
+    TEXT_CHROMA_V,        ///< chroma V
+    TEXT_ALL,             ///< Y+U+V
+    TEXT_NONE = 15
+};
 
 //TU settings for entropy encoding
 struct TUEntropyCodingParameters

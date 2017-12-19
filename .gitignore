@@ -185,3 +185,4 @@ local.properties
 
 cmake-build-debug/
 str.bin
+CNNOutput/

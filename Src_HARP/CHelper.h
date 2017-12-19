@@ -15,8 +15,8 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/features2d/features2d.hpp>
 
-#include <QString>
-#include <QProcess>
+//#include <QString>
+//#include <QProcess>
 #include "HARP_Defines.h"
 
 using namespace std;
@@ -170,28 +170,28 @@ void convertToCV_8UC3(Mat &Image);
 // writeJPG
 //------------------------------------------------------------------
 
-inline void writeJPG_Direkt(Mat Image, string FileName)
-{
-  //format given by provided filename!
-  int Quality = JPG_QUALITY; //100 = best
-  vector<int> params;
-  params.push_back(CV_IMWRITE_JPEG_QUALITY);
-  params.push_back(Quality);
-
-  //  //INVERTING
-  //  if (loadINI("HARP", "invert") == true)
-  //    Image = invertImage(Image);
-
-#ifdef JPG_DIMX
-  float Ratio = float(JPG_DIMX)/image.cols;
-  int JPEG_DimY = int(Ratio*image.rows);
-  cv::resize(image, image, cv::Size2i(JPG_DIMX, JPEG_DimY));
-#endif
-
-  imwrite(FileName, Image, params);
-  cout << "Wrote: " << FileName << endl;
-
-}
+//inline void writeJPG_Direkt(Mat Image, string FileName)
+//{
+//  //format given by provided filename!
+//  int Quality = JPG_QUALITY; //100 = best
+//  vector<int> params;
+//  params.push_back(CV_IMWRITE_JPEG_QUALITY);
+//  params.push_back(Quality);
+//
+//  //  //INVERTING
+//  //  if (loadINI("HARP", "invert") == true)
+//  //    Image = invertImage(Image);
+//
+//#ifdef JPG_DIMX
+//  float Ratio = float(JPG_DIMX)/image.cols;
+//  int JPEG_DimY = int(Ratio*image.rows);
+//  cv::resize(image, image, cv::Size2i(JPG_DIMX, JPEG_DimY));
+//#endif
+//
+//  imwrite(FileName, Image, params);
+//  cout << "Wrote: " << FileName << endl;
+//
+//}
 
 inline void resizeToHeight(Mat &Img, int Height)
 {
@@ -217,30 +217,30 @@ inline void padToWidth(Mat &Img, int Width)
 //------------------------------------------------------------------
 // writeText
 //------------------------------------------------------------------
-inline void writeText(Mat Matrix, QString text, Scalar color = Scalar(0, 0, 0), Point textOrg = Point(3, 3.0), double fontScale = 1.0, int thickness = 2)
-{
-  //int fontFace = FONT_HERSHEY_SIMPLEX;
-  int fontFace = FONT_HERSHEY_PLAIN;
+//inline void writeText(Mat Matrix, QString text, Scalar color = Scalar(0, 0, 0), Point textOrg = Point(3, 3.0), double fontScale = 1.0, int thickness = 2)
+//{
+//  //int fontFace = FONT_HERSHEY_SIMPLEX;
+//  int fontFace = FONT_HERSHEY_PLAIN;
+//
+//  int baseline = 0;
+//  //Size textSize = getTextSize(text, fontFace, fontScale, thickness, &baseline);
+//  baseline += thickness;
+//
+//  //RegEx for ' ' or ',' or '.' or ':' or '\t': QRegExp rx("(\\ |\\,|\\.|\\:|\\t)");
+//  QRegExp rx("(\\n)");
+//  QStringList query = text.split(rx);
+//
+//  foreach (QString textrow,query) //C++11 feature man!
+//  {
+//    textOrg.y += 20*fontScale;
+//    putText(Matrix, textrow.toLocal8Bit().constData(), textOrg, fontFace, fontScale, color, thickness, 3);
+//  }
+//}
 
-  int baseline = 0;
-  //Size textSize = getTextSize(text, fontFace, fontScale, thickness, &baseline);
-  baseline += thickness;
-
-  //RegEx for ' ' or ',' or '.' or ':' or '\t': QRegExp rx("(\\ |\\,|\\.|\\:|\\t)");
-  QRegExp rx("(\\n)");
-  QStringList query = text.split(rx);
-
-  foreach (QString textrow,query) //C++11 feature man!
-  {
-    textOrg.y += 20*fontScale;
-    putText(Matrix, textrow.toLocal8Bit().constData(), textOrg, fontFace, fontScale, color, thickness, 3);
-  }
-}
-
-inline void writeText(Mat Matrix, QString text, double fontScale = 1.0, Scalar color = Scalar(0, 0, 0), Point textOrg = Point(3, 3.0), int thickness = 2)
-{
-  writeText(Matrix, text, color, textOrg, fontScale, thickness);
-}
+//inline void writeText(Mat Matrix, QString text, double fontScale = 1.0, Scalar color = Scalar(0, 0, 0), Point textOrg = Point(3, 3.0), int thickness = 2)
+//{
+//  writeText(Matrix, text, color, textOrg, fontScale, thickness);
+//}
 
 //------------------------------------------------------------------
 // convert YCrCb to RGB, return copy

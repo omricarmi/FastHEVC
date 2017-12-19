@@ -5,10 +5,9 @@ project(HM_16_14)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-# Importing Qt
-find_package ( Qt5 COMPONENTS Qt5QtCore QtCore QTGui QtXml REQUIRED )
-include ( ${QT_USE_FILE} )
-
+#
+#find_package ( Qt4 COMPONENTS QtCore QTGui QtXml REQUIRED )
+#include ( ${QT_USE_FILE} )
 
 set(CMAKE_CXX_STANDARD 11)
 if(WIN32)
@@ -35,6 +34,9 @@ include_directories(source/Lib/ source/App/)
 #        source/App/utils/annexBbytecount.cpp
 #        source/App/utils/convert_NtoMbit_YCbCr.cpp
 
+set(SOURCE_FILES_3RD_PARTY
+        ${QT_INCLUDES})
+
 set(SOURCE_FILES_DECODER
         source/App/TAppDecoder/decmain.cpp
         source/App/TAppDecoder/TAppDecCfg.cpp
@@ -55,16 +57,13 @@ set(SOURCE_FILES_HARP
         Src_HARP/CGlobal.h
         Src_HARP/CHelper.h
         Src_HARP/CLibGlobal.h
+        Src_HARP/HARP_Defines.h
         Src_HARP/CShow.h
         Src_HARP/CShow_Conversion.h
-        Src_HARP/CShow_PredictionUnits.h
         Src_HARP/CShow_PredResiReco.h
-        Src_HARP/CShow_RDO.h
-        Src_HARP/CShow_RefIndices.h
-        Src_HARP/CShow_UnitCloseup.h
-        Src_HARP/PyCTU.h
-        Src_HARP/PyFactory.h
-        Src_HARP/PyHelper.h)
+        Src_HARP/json.h
+        Src_HARP/json-forwards.h
+        Src_HARP/jsoncpp.cpp)
 
 set(SOURCE_FILES
         compat/msvc/stdint.h
@@ -205,8 +204,10 @@ set(SOURCE_FILES
         source/Lib/TLibVideoIO/TVideoIOYuv.cpp
         source/Lib/TLibVideoIO/TVideoIOYuv.h)
 
-add_executable(HM_16_14_ENC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER} ${SOURCE_FILES_HARP})
-add_executable(HM_16_14_DEC ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
+add_executable(HM_16_14_ENC
+        ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER} ${SOURCE_FILES_HARP} ${SOURCE_FILES_3RD_PARTY})
+add_executable(HM_16_14_DEC
+        ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
 
 # Link OpenCV to our encoder target
 target_link_libraries(HM_16_14_ENC ${OpenCV_LIBS})

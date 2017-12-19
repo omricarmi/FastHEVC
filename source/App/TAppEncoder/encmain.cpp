@@ -44,6 +44,7 @@
 //! \{
 
 #include "../Lib/TLibCommon/Debug.h"
+#include "../../../Src_HARP/CGlobal.h"
 
 // ====================================================================================================================
 // Main function
@@ -89,6 +90,19 @@ int main(int argc, char* argv[])
 #if ENVIRONMENT_VARIABLE_DEBUG_AND_TEST
   EnvVar::printEnvVarInUse();
 #endif
+
+
+  //-------------------------------------------------------------
+  //GLOBAL INIT
+  //-------------------------------------------------------------
+  Global.init_general(); //do not use before parseCfg
+  Global.isEncoder = true;
+  Global.WidthInLCUs  = (int)(ceil((float)cTAppEncTop.getSourceWidth() / CTUSIZE));
+  Global.HeightInLCUs = (int)(ceil((float)cTAppEncTop.getSourceHeight() / CTUSIZE));
+  Global.NumCTUs = Global.WidthInLCUs * Global.HeightInLCUs;
+  Global.DimX = cTAppEncTop.getSourceWidth();
+  Global.DimY = cTAppEncTop.getSourceHeight();
+  cout << "FN_InputYUV (as on cmd line): " << cTAppEncTop.getSourceFileName() << endl << endl;
 
   // starting time
   Double dResult;

@@ -110,6 +110,7 @@ Void TComPicSym::create  ( const TComSPS &sps, const TComPPS &pps, UInt uiMaxDep
   m_frameWidthInCtus   = ( iPicWidth %uiMaxCuWidth  ) ? iPicWidth /uiMaxCuWidth  + 1 : iPicWidth /uiMaxCuWidth;
   m_frameHeightInCtus  = ( iPicHeight%uiMaxCuHeight ) ? iPicHeight/uiMaxCuHeight + 1 : iPicHeight/uiMaxCuHeight;
 
+
   m_numCtusInFrame     = m_frameWidthInCtus * m_frameHeightInCtus;
 #if REDUCED_ENCODER_MEMORY
   m_pictureCtuArray    = NULL;
@@ -159,6 +160,8 @@ Void TComPicSym::create  ( const TComSPS &sps, const TComPPS &pps, UInt uiMaxDep
 
   xInitTiles();
   xInitCtuTsRsAddrMaps();
+
+
 
 }
 

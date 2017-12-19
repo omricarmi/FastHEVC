@@ -46,6 +46,7 @@
 #include "TLibCommon/SEI.h"
 #include "TLibCommon/NAL.h"
 #include "NALwrite.h"
+#include "../../../Src_HARP/CShow_PredResiReco.h"
 #include <time.h>
 #include <math.h>
 
@@ -1556,6 +1557,9 @@ Void TEncGOP::compressGOP( Int iPOCLast, Int iNumPicRcvd, TComList<TComPic*>& rc
       {
         m_pcSliceEncoder->precompressSlice( pcPic );
         m_pcSliceEncoder->compressSlice   ( pcPic, false, false );
+
+        //FastHEVC
+        CShow_PredResiReco Show_PredResiReco(pcPic);
 
         const UInt curSliceSegmentEnd = pcSlice->getSliceSegmentCurEndCtuTsAddr();
         if (curSliceSegmentEnd < numberOfCtusInFrame)

@@ -8,6 +8,8 @@
 #include <typeinfo>
 #include <vector>
 #include <string>
+#include <TLibCommon/TComMv.h>
+#include <TLibCommon/TComPic.h>
 
 #include "opencv/cv.hpp"
 #include "opencv2/core/core.hpp"
@@ -17,6 +19,7 @@
 
 //#include "TLibCommon/TypeDef.h"
 #include "CShow_Conversion.h"
+#include "HARP_Defines.h"
 
 using namespace std;
 using namespace cv;
@@ -46,7 +49,7 @@ struct sCU
 	string Mode;
 
 	//QP
-	UInt z;
+	UInt QP;
 };
 
 struct sPU
@@ -65,13 +68,13 @@ struct sPU
   TComMv Mv;
 };
 
-inline QString getString_GeneralInfo(TComDataCU* pcCU, UInt uiPartIdx);
+//inline QString getString_GeneralInfo(TComDataCU* pcCU, UInt uiPartIdx);
 
 inline void assertParameters(TComPic* rpcPic, Int iCUAddr)
 {
   //LCU width and height, position of LCU in picture
-  UInt uiWidthInLCUs  = rpcPic->getPicSym()->getFrameWidthInCU();
-  UInt uiHeightInLCUs = rpcPic->getPicSym()->getFrameHeightInCU();
+  UInt uiWidthInLCUs  = rpcPic->getPicSym()->getFrameWidthInCtus();
+  UInt uiHeightInLCUs = rpcPic->getPicSym()->getFrameHeightInCtus();
 
   //Asserting things (just making sure :)
   UInt uiTileCol;
@@ -80,13 +83,16 @@ inline void assertParameters(TComPic* rpcPic, Int iCUAddr)
   UInt uiTileLCUY;
   UInt uiTileWidth;
   UInt uiTileHeight;
-  uiTileCol = rpcPic->getPicSym()->getTileIdxMap(iCUAddr) % (rpcPic->getPicSym()->getNumColumnsMinus1()+1); // what column of tiles are we in?
-  uiTileStartLCU = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getFirstCUAddr();
+  uiTileCol = rpcPic->getPicSym()->getTileIdxMap(iCUAddr) % (rpcPic->getPicSym()->getNumTileColumnsMinus1()+1); // what column of tiles are we in?
+  uiTileStartLCU = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getFirstCtuRsAddr();
   uiTileLCUX = uiTileStartLCU % uiWidthInLCUs;
   uiTileLCUY = uiTileStartLCU / uiWidthInLCUs;
   assert( uiTileCol == 0 and uiTileStartLCU == 0 and uiTileLCUX == 0 and uiTileLCUY == 0);
-  uiTileWidth = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getTileWidth();
-  uiTileHeight = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getTileHeight();
+    //TODO by omricarmi on 19/12/2017: not sure
+  uiTileWidth = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getTileWidthInCtus();
+  uiTileHeight = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getTileHeightInCtus();
+//  uiTileWidth = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getTileWidth();
+//  uiTileHeight = rpcPic->getPicSym()->getTComTile(rpcPic->getPicSym()->getTileIdxMap(iCUAddr))->getTileHeight();
 }
 
 inline sCU get_CU_Internal(TComDataCU* pcCU, UInt Depth, UInt AbsPartIdx);
@@ -113,7 +119,7 @@ inline sCU get_CU_FIN(TComDataCU* pcCU, UInt AbsPartIdx)
 inline sCU get_CU_RDO(TComDataCU* pcCU)
 {
 	UInt Depth = *pcCU->getDepth(); //INTERESTING: we do NOT need an AbsPartIdx here
-	UInt AbsPartIdx = pcCU->getZorderIdxInCU();
+	UInt AbsPartIdx = pcCU->getZorderIdxInCtu();
 	sCU CU = get_CU_Internal(pcCU, Depth, AbsPartIdx);
 	return CU;
 }
@@ -146,12 +152,12 @@ inline sCU get_CU_Internal(TComDataCU* pcCU, UInt Depth, UInt AbsPartIdx)
 	//Getting the pcPic, POC and iCUAddr
 	TComPic* rpcPic = pcCU->getPic();
 	CU.POC = rpcPic->getPOC();
-	CU.CTUIdx = pcCU->getAddr(); //warning: bad naming, address of LCU ONLY!
+	CU.CTUIdx = pcCU->getCtuRsAddr(); //warning: bad naming, address of LCU ONLY!
 	assertParameters(rpcPic, CU.CTUIdx);
 
 	//width and height in CTUs
-	UInt Width_inCTUs  = rpcPic->getPicSym()->getFrameWidthInCU();
-	UInt Height_inCTUs = rpcPic->getPicSym()->getFrameHeightInCU();
+	UInt Width_inCTUs  = rpcPic->getPicSym()->getFrameWidthInCtus();
+	UInt Height_inCTUs = rpcPic->getPicSym()->getFrameHeightInCtus();
 
 	//Getting Raster Part Index
 	CU.RastPartIdx  = g_auiZscanToRaster[CU.AbsPartIdx];
@@ -175,26 +181,26 @@ inline sCU get_CU_Internal(TComDataCU* pcCU, UInt Depth, UInt AbsPartIdx)
 	return CU;
 }
 
-inline UInt calculateHADs_Y( TComYuv* pcRef, TComYuv* pcCur, UInt uiPartAddr, Int Rows, Int Cols)
-//(Pel* piOrg, Pel* piCur, Int  iRows, Int  iCols, iStrideCur, iStrideOrg )
-{
-  //adapted from: UInt TComRdCost::xGetHADs( DistParam* pcDtParam )
-
-  DistParam DtParam;
-  DistParam *pcDtParam = &DtParam ;
-  pcDtParam->bApplyWeight = false;
-  pcDtParam->pOrg = pcRef->getLumaAddr(uiPartAddr);
-  pcDtParam->pCur = pcCur->getLumaAddr(uiPartAddr);
-  pcDtParam->iRows = Rows;
-  pcDtParam->iCols = Cols;
-  pcDtParam->iStrideOrg =  pcRef->getStride();
-  pcDtParam->iStrideCur =  pcCur->getStride();
-  pcDtParam->iStep = 1; //LUMA
-  pcDtParam->bitDepth = 8;
-
-  UInt HAD_SAD = TComRdCost::xGetHADs(pcDtParam);
-  return HAD_SAD;
-}
+//inline UInt calculateHADs_Y( TComYuv* pcRef, TComYuv* pcCur, UInt uiPartAddr, Int Rows, Int Cols)
+////(Pel* piOrg, Pel* piCur, Int  iRows, Int  iCols, iStrideCur, iStrideOrg )
+//{
+//  //adapted from: UInt TComRdCost::xGetHADs( DistParam* pcDtParam )
+//
+//  DistParam DtParam;
+//  DistParam *pcDtParam = &DtParam ;
+//  pcDtParam->bApplyWeight = false;
+//  pcDtParam->pOrg = pcRef->getAddr(COMPONENT_Y,uiPartAddr);
+//  pcDtParam->pCur = pcCur->getAddr(COMPONENT_Y,uiPartAddr);
+//  pcDtParam->iRows = Rows;
+//  pcDtParam->iCols = Cols;
+//  pcDtParam->iStrideOrg =  pcRef->getStride(COMPONENT_Y);
+//  pcDtParam->iStrideCur =  pcCur->getStride(COMPONENT_Y);
+//  pcDtParam->iStep = 1; //LUMA
+//  pcDtParam->bitDepth = 8;
+//
+//  UInt HAD_SAD = TComRdCost::xGetHADs(pcDtParam);
+//  return HAD_SAD;
+//}
 
   inline string getString_PartitionSize(TComDataCU* pcCU, UInt uiAbsZorderIdx)
   {
@@ -204,29 +210,29 @@ inline UInt calculateHADs_Y( TComYuv* pcRef, TComYuv* pcCur, UInt uiPartAddr, In
     return string(text);
   }
 
-  inline QString getString_GeneralInfo(TComDataCU* pcCU, UInt uiPartIdx)
-  {
-    //NOTE: uiPartIdx is the same as uiAbsZorderIdx!
-    UInt  uiPartAddr;
-    Int   iRoiWidth, iRoiHeight;
-    pcCU->getPartIndexAndSize( uiPartIdx, uiPartAddr, iRoiWidth, iRoiHeight );
-
-    PartSize ePartSize = pcCU->getPartitionSize(0);
-    UInt NumPU = ( ePartSize == SIZE_2Nx2N ? 1 : ( ePartSize == SIZE_NxN ? 4 : 2 ) );
-
-    QString Info;
-    Info += QString("CTU-Addr=%1 \n")
-                            .arg(pcCU->getAddr());
-    Info += QString("CU-Depth=%2 | CU-Dims=%3x%4 \n")
-                            .arg(pcCU->getDepth(uiPartIdx))
-                            .arg(pcCU->getWidth(uiPartIdx))
-                            .arg(pcCU->getHeight(uiPartIdx));
-    Info += QString("%1 (part size) | PU %2 of %3 \n")
-                      .arg(PartitionSizeStrings[pcCU->getPartitionSize(0)])
-                      .arg(uiPartIdx+1)
-                      .arg(NumPU);
-    return Info;
-  }
+//  inline QString getString_GeneralInfo(TComDataCU* pcCU, UInt uiPartIdx)
+//  {
+//    //NOTE: uiPartIdx is the same as uiAbsZorderIdx!
+//    UInt  uiPartAddr;
+//    Int   iRoiWidth, iRoiHeight;
+//    pcCU->getPartIndexAndSize( uiPartIdx, uiPartAddr, iRoiWidth, iRoiHeight );
+//
+//    PartSize ePartSize = pcCU->getPartitionSize(0);
+//    UInt NumPU = ( ePartSize == SIZE_2Nx2N ? 1 : ( ePartSize == SIZE_NxN ? 4 : 2 ) );
+//
+//    QString Info;
+//    Info += QString("CTU-Addr=%1 \n")
+//                            .arg(pcCU->getAddr());
+//    Info += QString("CU-Depth=%2 | CU-Dims=%3x%4 \n")
+//                            .arg(pcCU->getDepth(uiPartIdx))
+//                            .arg(pcCU->getWidth(uiPartIdx))
+//                            .arg(pcCU->getHeight(uiPartIdx));
+//    Info += QString("%1 (part size) | PU %2 of %3 \n")
+//                      .arg(PartitionSizeStrings[pcCU->getPartitionSize(0)])
+//                      .arg(uiPartIdx+1)
+//                      .arg(NumPU);
+//    return Info;
+//  }
 
   inline void myGetPartIndexAndSize( TComDataCU* pcCU, UInt uiAbsZorderIdx, UInt uiDepth,
                               UInt PUIdx, //PUIdx: PU index, maybe just one, maybe up to four
@@ -238,7 +244,7 @@ inline UInt calculateHADs_Y( TComYuv* pcRef, TComYuv* pcCur, UInt uiPartAddr, In
     unsigned char Height = pcCU->getHeight(uiAbsZorderIdx);
 
     TComPic* pcPic     = pcCU->getPic();
-    UInt NumPartInCTU  = pcPic->getNumPartInCU();      //number of StorageUnits (4x4) in CTU
+    UInt NumPartInCTU  = pcPic->getNumPartitionsInCtu();      //number of StorageUnits (4x4) in CTU
     UInt NumPartInCU = NumPartInCTU >> (uiDepth<<1); //number of StorageUnits (4x4) in current CU
 
     switch ( ePartSize )
@@ -291,99 +297,99 @@ inline UInt calculateHADs_Y( TComYuv* pcRef, TComYuv* pcCur, UInt uiPartAddr, In
 //  VISUALIZATION CODE
 //------------------------------------------------------------------------------
 
-inline void getVis_CurrentCU(TComDataCU* pcCU, Mat &Vis_Image)
-{
-  sCU CU = get_CU_RDO(pcCU);
+//inline void getVis_CurrentCU(TComDataCU* pcCU, Mat &Vis_Image)
+//{
+//  sCU CU = get_CU_RDO(pcCU);
+//
+//  //Getting original pixel values of LCU
+//
+//  Mat PicYuvOrg;
+//  copy_PicYuv2Mat(pcCU->getPic()->getPicYuvOrg(), PicYuvOrg, INTER_NEAREST);
+//  convertToCV_8UC3(PicYuvOrg);
+//  Mat Extended = Mat(Global.HeightInLCUs*64, Global.WidthInLCUs*64, CV_8UC3, BLACK); //CTUs may expand beyond image!
+//  PicYuvOrg.copyTo(Extended(Rect(0, 0, Global.DimX, Global.DimY)));
+//  Mat PicYuvOrgROI = Extended(Rect(CU.CTUPos.x, CU.CTUPos.y, CTU_DIM, CTU_DIM));
+//
+//  cvtColor(PicYuvOrgROI, Vis_Image, CV_YCrCb2RGB);
+//  Mat TinyROI = Vis_Image(Rect(CU.RelPos.x, CU.RelPos.y, CU.Width, CU.Width));
+//
+//  //Let's decide on a color, color-fanboy!
+//  Scalar color(128,128,128); //grey
+//  if(pcCU->getPredictionMode(0) == MODE_INTRA)
+//    color = Scalar(0,0,255); // red
+//  else if(pcCU->getPredictionMode(0) == MODE_INTER && pcCU->isSkipped(0))
+//    color = Scalar(0,255,0); // green
+//  else if(pcCU->getPredictionMode(0) == MODE_INTER)
+//    color = Scalar(255,0,0); // blue
+//
+//  //Coloring CU Border
+//  Mat Tmp = TinyROI.clone();
+//  TinyROI = color; //full color splil yo
+//  Tmp(Rect(2, 2, TinyROI.cols - 4, TinyROI.rows - 4)).copyTo(TinyROI(Rect(2, 2, TinyROI.cols - 4, TinyROI.rows - 4)));
+//}
 
-  //Getting original pixel values of LCU
+//inline void getVis_CurrentPU(TComDataCU* pcCU, Int iPartIdx, QString Headline, Mat &Vis_Image, Mat &Vis_Text)
+//{
+//  getVis_CurrentCU(pcCU, Vis_Image);
+//
+//  //it's a bird, it's a plane, its... a PREDICTION UNIT MAN!
+//  //off we go, looking at our PU in detail
+//  UInt  uiPartAddr;
+//  Int   iRoiWidth, iRoiHeight;
+//  pcCU->getPartIndexAndSize( iPartIdx, uiPartAddr, iRoiWidth, iRoiHeight );
+//  UInt uiAbsZorderIdx = pcCU->getZorderIdxInCU();
+//  int RasterPartIdx  = g_auiZscanToRaster[uiAbsZorderIdx+uiPartAddr];
+//
+//  //drawing current PU
+//  int SUnitsPerRow = 64/4; // 64/4 = 16 StorageUnits in a CTU row
+//  Point PU_Anc  = Point(RasterPartIdx % (SUnitsPerRow), RasterPartIdx / (SUnitsPerRow)) * 4;
+//  Point PU_Dims = Point(iRoiWidth , iRoiHeight );
+//
+//  //Yeah! We just found out how to calculate PU positions without recursion!
+//  PartSize ePartSize = pcCU->getPartitionSize( 0 );
+//  UInt NumPU = ( ePartSize == SIZE_2Nx2N ? 1 : ( ePartSize == SIZE_NxN ? 4 : 2 ) );
+//  UInt NextPU_Increment = ( g_auiPUOffset[UInt( ePartSize )] << ( ( pcCU->getSlice()->getSPS()->getMaxCUDepth() - pcCU->getDepth(iPartIdx) ) << 1 ) ) >> 4;
+//
+//  //Coloring PU Border
+//  Mat PU_Roi = Vis_Image(Rect(PU_Anc.x, PU_Anc.y, PU_Dims.x, PU_Dims.y));
+//  Mat Tmp2 = PU_Roi.clone();
+//  PU_Roi = RED; //full color spill yo
+//  Tmp2(Rect(1, 1, PU_Roi.cols - 2, PU_Roi.rows - 2)).copyTo(PU_Roi(Rect(1, 1, PU_Roi.cols - 2, PU_Roi.rows - 2)));
+//
+//  // create Vis_Text
+//  Vis_Text = Mat(VIS_TEXT_SIZE, CV_8UC3, Scalar(128,128,128));
+//  QString Info = QString(Headline) + "\n";
+//  Info += QString("Blue: cur-CU | Red: cur-PU\n");
+//  Info += getString_GeneralInfo(pcCU, iPartIdx);
+//  Info += QString("uiAbsZorderIdx=%1 \n").arg(uiAbsZorderIdx);
+//  Info += QString("uiPartAddr=%1 | RasterPartIdx=%2\n").arg(uiPartAddr).arg(RasterPartIdx);
+//  for ( UInt uiPartIdx = 0, uiSubPartIdx = uiAbsZorderIdx; uiPartIdx < NumPU; uiPartIdx++, uiSubPartIdx += NextPU_Increment )
+//    Info += QString("Processing PU %1 \n").arg(uiPartIdx);
+//
+//  writeText(Vis_Text, Info, 2.0);
+//}
 
-  Mat PicYuvOrg;
-  copy_PicYuv2Mat(pcCU->getPic()->getPicYuvOrg(), PicYuvOrg, INTER_NEAREST);
-  convertToCV_8UC3(PicYuvOrg);
-  Mat Extended = Mat(Global.HeightInLCUs*64, Global.WidthInLCUs*64, CV_8UC3, BLACK); //CTUs may expand beyond image!
-  PicYuvOrg.copyTo(Extended(Rect(0, 0, Global.DimX, Global.DimY)));
-  Mat PicYuvOrgROI = Extended(Rect(CU.CTUPos.x, CU.CTUPos.y, CTU_DIM, CTU_DIM));
-
-  cvtColor(PicYuvOrgROI, Vis_Image, CV_YCrCb2RGB);
-  Mat TinyROI = Vis_Image(Rect(CU.RelPos.x, CU.RelPos.y, CU.Width, CU.Width));
-
-  //Let's decide on a color, color-fanboy!
-  Scalar color(128,128,128); //grey
-  if(pcCU->getPredictionMode(0) == MODE_INTRA)
-    color = Scalar(0,0,255); // red
-  else if(pcCU->getPredictionMode(0) == MODE_INTER && pcCU->isSkipped(0))
-    color = Scalar(0,255,0); // green
-  else if(pcCU->getPredictionMode(0) == MODE_INTER)
-    color = Scalar(255,0,0); // blue
-
-  //Coloring CU Border
-  Mat Tmp = TinyROI.clone();
-  TinyROI = color; //full color splil yo
-  Tmp(Rect(2, 2, TinyROI.cols - 4, TinyROI.rows - 4)).copyTo(TinyROI(Rect(2, 2, TinyROI.cols - 4, TinyROI.rows - 4)));
-}
-
-inline void getVis_CurrentPU(TComDataCU* pcCU, Int iPartIdx, QString Headline, Mat &Vis_Image, Mat &Vis_Text)
-{
-  getVis_CurrentCU(pcCU, Vis_Image);
-
-  //it's a bird, it's a plane, its... a PREDICTION UNIT MAN!
-  //off we go, looking at our PU in detail
-  UInt  uiPartAddr;
-  Int   iRoiWidth, iRoiHeight;
-  pcCU->getPartIndexAndSize( iPartIdx, uiPartAddr, iRoiWidth, iRoiHeight );
-  UInt uiAbsZorderIdx = pcCU->getZorderIdxInCU();
-  int RasterPartIdx  = g_auiZscanToRaster[uiAbsZorderIdx+uiPartAddr];
-
-  //drawing current PU
-  int SUnitsPerRow = 64/4; // 64/4 = 16 StorageUnits in a CTU row
-  Point PU_Anc  = Point(RasterPartIdx % (SUnitsPerRow), RasterPartIdx / (SUnitsPerRow)) * 4;
-  Point PU_Dims = Point(iRoiWidth , iRoiHeight );
-
-  //Yeah! We just found out how to calculate PU positions without recursion!
-  PartSize ePartSize = pcCU->getPartitionSize( 0 );
-  UInt NumPU = ( ePartSize == SIZE_2Nx2N ? 1 : ( ePartSize == SIZE_NxN ? 4 : 2 ) );
-  UInt NextPU_Increment = ( g_auiPUOffset[UInt( ePartSize )] << ( ( pcCU->getSlice()->getSPS()->getMaxCUDepth() - pcCU->getDepth(iPartIdx) ) << 1 ) ) >> 4;
-
-  //Coloring PU Border
-  Mat PU_Roi = Vis_Image(Rect(PU_Anc.x, PU_Anc.y, PU_Dims.x, PU_Dims.y));
-  Mat Tmp2 = PU_Roi.clone();
-  PU_Roi = RED; //full color spill yo
-  Tmp2(Rect(1, 1, PU_Roi.cols - 2, PU_Roi.rows - 2)).copyTo(PU_Roi(Rect(1, 1, PU_Roi.cols - 2, PU_Roi.rows - 2)));
-
-  // create Vis_Text
-  Vis_Text = Mat(VIS_TEXT_SIZE, CV_8UC3, Scalar(128,128,128));
-  QString Info = QString(Headline) + "\n";
-  Info += QString("Blue: cur-CU | Red: cur-PU\n");
-  Info += getString_GeneralInfo(pcCU, iPartIdx);
-  Info += QString("uiAbsZorderIdx=%1 \n").arg(uiAbsZorderIdx);
-  Info += QString("uiPartAddr=%1 | RasterPartIdx=%2\n").arg(uiPartAddr).arg(RasterPartIdx);
-  for ( UInt uiPartIdx = 0, uiSubPartIdx = uiAbsZorderIdx; uiPartIdx < NumPU; uiPartIdx++, uiSubPartIdx += NextPU_Increment )
-    Info += QString("Processing PU %1 \n").arg(uiPartIdx);
-
-  writeText(Vis_Text, Info, 2.0);
-}
-
-inline void getVis_YUVBuffer(TComDataCU* pcCU, TComYuv* pcYuv, QString Headline, Mat &Vis_Image, Mat &Vis_Text)
-{
-  //create Vis_Image
-  copy_Yuv2Mat(pcYuv, Vis_Image, INTER_NEAREST);
-
-  convertToCV_8UC3(Vis_Image);
-  cvtColor(Vis_Image, Vis_Image, CV_YCrCb2RGB);
-
-  // create Vis_Text
-  int iHeight = pcYuv->m_iHeight;
-  int iWidth  = pcYuv->m_iWidth;
-  int iStride = pcYuv->m_iWidth;
-
-  //assert( iHeight == iStride && iWidth == iStride);
-
-  Vis_Text = Mat(VIS_TEXT_SIZE, CV_8UC3, Scalar(128,128,128));
-  QString Info = QString(Headline) + "\n";
-  Info += QString("Dims: %1x%2\n").arg(iHeight).arg(iWidth);
-  Info += QString("Stride: %1\n").arg(iStride);
-  writeText(Vis_Text, Info, 2.0);
-}
+//inline void getVis_YUVBuffer(TComDataCU* pcCU, TComYuv* pcYuv, QString Headline, Mat &Vis_Image, Mat &Vis_Text)
+//{
+//  //create Vis_Image
+//  copy_Yuv2Mat(pcYuv, Vis_Image, INTER_NEAREST);
+//
+//  convertToCV_8UC3(Vis_Image);
+//  cvtColor(Vis_Image, Vis_Image, CV_YCrCb2RGB);
+//
+//  // create Vis_Text
+//  int iHeight = pcYuv->m_iHeight;
+//  int iWidth  = pcYuv->m_iWidth;
+//  int iStride = pcYuv->m_iWidth;
+//
+//  //assert( iHeight == iStride && iWidth == iStride);
+//
+//  Vis_Text = Mat(VIS_TEXT_SIZE, CV_8UC3, Scalar(128,128,128));
+//  QString Info = QString(Headline) + "\n";
+//  Info += QString("Dims: %1x%2\n").arg(iHeight).arg(iWidth);
+//  Info += QString("Stride: %1\n").arg(iStride);
+//  writeText(Vis_Text, Info, 2.0);
+//}
 
 inline void getVis_SingleYUVBuffers(TComYuv* pcYuv, Mat &Y, Mat &U, Mat &V, bool doRescaleAndShift)
 {
@@ -419,31 +425,31 @@ inline Mat getLumDifference(Mat Img1, Mat Img2)
   return VisDiff;
 }
 
-inline void getVis_subtractYBuffers(TComDataCU* pcCU, TComYuv* pcYuv1, TComYuv* pcYuv2, QString Headline, Mat &Vis_Image, Mat &Vis_Text)
-{
-  Mat Yuv1, Yuv2;
-  copy_Yuv2Mat(pcYuv1, Yuv1, INTER_NEAREST);
-  copy_Yuv2Mat(pcYuv2, Yuv2, INTER_NEAREST);
-
-  vector<Mat> splitted;
-
-  split(Yuv1, splitted);
-  Mat Y1 = splitted[0].clone() / 2;
-  split(Yuv2, splitted);
-  Mat Y2 = splitted[0].clone() / 2;
-
-  int Contrast = 1;
-  Mat YDiff = ((Y1 - Y2)*Contrast)+128;
-
-  Mat pointers[] = { YDiff, YDiff, YDiff };
-  merge(pointers, 3, Vis_Image);
-
-  convertToCV_8UC3(Vis_Image);
-
-  Vis_Text = Mat(VIS_TEXT_SIZE, CV_8UC3, Scalar(128,128,128));
-  QString Info = QString(Headline) + "\n";
-  writeText(Vis_Text, Info, 2.0);
-}
+//inline void getVis_subtractYBuffers(TComDataCU* pcCU, TComYuv* pcYuv1, TComYuv* pcYuv2, QString Headline, Mat &Vis_Image, Mat &Vis_Text)
+//{
+//  Mat Yuv1, Yuv2;
+//  copy_Yuv2Mat(pcYuv1, Yuv1, INTER_NEAREST);
+//  copy_Yuv2Mat(pcYuv2, Yuv2, INTER_NEAREST);
+//
+//  vector<Mat> splitted;
+//
+//  split(Yuv1, splitted);
+//  Mat Y1 = splitted[0].clone() / 2;
+//  split(Yuv2, splitted);
+//  Mat Y2 = splitted[0].clone() / 2;
+//
+//  int Contrast = 1;
+//  Mat YDiff = ((Y1 - Y2)*Contrast)+128;
+//
+//  Mat pointers[] = { YDiff, YDiff, YDiff };
+//  merge(pointers, 3, Vis_Image);
+//
+//  convertToCV_8UC3(Vis_Image);
+//
+//  Vis_Text = Mat(VIS_TEXT_SIZE, CV_8UC3, Scalar(128,128,128));
+//  QString Info = QString(Headline) + "\n";
+//  writeText(Vis_Text, Info, 2.0);
+//}
 
 
 

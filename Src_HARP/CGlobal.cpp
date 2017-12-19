@@ -2,8 +2,8 @@
 // This file is licensed under the 2-Clause BSD License (see HARP_License.txt)
 
 #include "CGlobal.h"
-#include "PyHelper.h"
-
+//#include "PyHelper.h"
+CGlobal Global;
 CGlobal::CGlobal()
 {
   //---------------------------------------------
@@ -22,7 +22,7 @@ CGlobal::CGlobal()
 
 CGlobal::~CGlobal()
 {
-  pyf_finalize();
+//  pyf_finalize();
 }
 
 //IMPORTANT NOTE:: init() MUST be called INSTANTLY after
@@ -34,11 +34,11 @@ void CGlobal::init_general()
   initDone = true;
 }
 
-void CGlobal::init_python()
-{
-  pyf_initialize();
-  Converter = new NDArrayConverter;
-}
+//void CGlobal::init_python()
+//{
+//  pyf_initialize();
+//  Converter = new NDArrayConverter;
+//}
 
 
 //Initializing Tmp directory
@@ -82,7 +82,7 @@ int CGlobal::getCurrentPOC()
 
 void CGlobal::setCurrentCTU(int CTU)
 {
-  QCoreApplication::processEvents();
+//  QCoreApplication::processEvents();
   this->CurrentCTU = CTU;
 }
 
@@ -91,41 +91,54 @@ int CGlobal::getCurrentCTU()
   return this->CurrentCTU;
 }
 
-bool CGlobal::isObsCTU()
-{
+//bool CGlobal::isObsCTU()
+//{
+//
+//  //reduces performance by 15%
+//  //maybe there is a more efficient (native?) way to do this?
+//  if (pyf_is_HDT_POC(CurrentPOC) and pyf_is_VisRDO_CTU(CurrentCTU))
+//    return true;
+//  else return false;
+//}
 
-  //reduces performance by 15%
-  //maybe there is a more efficient (native?) way to do this?
-  if (pyf_is_HDT_POC(CurrentPOC) and pyf_is_VisRDO_CTU(CurrentCTU))
-    return true;
-  else return false;
-}
-
-void CGlobal::exportImage(Mat Image, string nickname, bool withPOCIdx, bool withCTUIdx, bool exportToSinglePics)
-{
-  char POCStr[500] = "";
-  char CTUStr[500] = "";
-  if(withPOCIdx)
-    sprintf(POCStr, "POC_%05d_", this->getCurrentPOC());
-  if(withCTUIdx)
-    sprintf(CTUStr, "_CTU%04d", this->getCurrentCTU());
-
-  string FN;
-  if (exportToSinglePics)
-    FN = this->TmpDir + "SinglePics/" + POCStr + nickname + CTUStr + IMAGE_FORMAT;
-  else
-    FN = this->TmpDir + POCStr + nickname + CTUStr + IMAGE_FORMAT;
-
-  //format given by provided filename!
-  int Quality = JPG_QUALITY; //100 = best
-  vector<int> params;
-  params.push_back(CV_IMWRITE_JPEG_QUALITY);
-  params.push_back(Quality);
-
-  //INVERTING
-  if (loadINI("Visualization", "Invert") == true)
-    Image = invertImage(Image);
-
-  imwrite(FN.c_str(), Image, params);
-  cout << "Exported: " << FN << endl;
-}
+//void CGlobal::exportImage(Mat Image, string nickname, bool withPOCIdx, bool withCTUIdx, bool exportToSinglePics)
+//{
+//  char POCStr[500] = "";
+//  char CTUStr[500] = "";
+//  if(withPOCIdx)
+//    sprintf(POCStr, "POC_%05d_", this->getCurrentPOC());
+//  if(withCTUIdx)
+//    sprintf(CTUStr, "_CTU%04d", this->getCurrentCTU());
+//
+//  string FN;
+//  if (exportToSinglePics)
+//    FN = this->TmpDir + "SinglePics/" + POCStr + nickname + CTUStr + IMAGE_FORMAT;
+//  else
+//    FN = this->TmpDir + POCStr + nickname + CTUStr + IMAGE_FORMAT;
+//
+//  //format given by provided filename!
+//  int Quality = JPG_QUALITY; //100 = best
+//  vector<int> params;
+//  params.push_back(1);
+////  params.push_back(CV_IMWRITE_JPEG_QUALITY);
+//  params.push_back(Quality);
+//
+//
+//  imwrite(FN.c_str(), Image, params);
+//  cout << "Exported: " << FN << endl;
+//}
+//
+//void CGlobal::exportImagePNG(Mat Image, string nickname, string dirName) {
+//  string FN;
+//  FN = "/home/compm/Desktop/HARP/HARP_Kit/tmp/" + dirName + "/" + nickname + ".png";
+//
+//  //format given by provided filename!
+//  int Quality = 0; //0 = slower
+//  vector<int> params;
+//  params.push_back(16);
+////  params.push_back(CV_IMWRITE_PNG_COMPRESSION); //TODO by omricarmi on 19/12/2017: check why dont work
+//  params.push_back(Quality);
+//
+//  imwrite(FN.c_str(), Image, params);
+//  cout << "Exported: " << FN << endl;
+//}
