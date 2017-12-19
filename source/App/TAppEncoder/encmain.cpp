@@ -45,80 +45,86 @@
 
 #include "../Lib/TLibCommon/Debug.h"
 #include "../../../Src_HARP/CGlobal.h"
-
+#include "../../../Src_HARP/json-forwards.h"
+#include "../../../Src_HARP/json.h"
 // ====================================================================================================================
 // Main function
 // ====================================================================================================================
 
 int main(int argc, char* argv[])
 {
-  TAppEncTop  cTAppEncTop;
+    TAppEncTop  cTAppEncTop;
 
-  // print information
-  fprintf( stdout, "\n" );
-  fprintf( stdout, "HM software: Encoder Version [%s] (including RExt)", NV_VERSION );
-  fprintf( stdout, NVM_ONOS );
-  fprintf( stdout, NVM_COMPILEDBY );
-  fprintf( stdout, NVM_BITS );
-  fprintf( stdout, "\n\n" );
+    // print information
+    fprintf( stdout, "\n" );
+    fprintf( stdout, "HM software: Encoder Version [%s] (including RExt)", NV_VERSION );
+    fprintf( stdout, NVM_ONOS );
+    fprintf( stdout, NVM_COMPILEDBY );
+    fprintf( stdout, NVM_BITS );
+    fprintf( stdout, "\n\n" );
 
-  // create application encoder class
-  cTAppEncTop.create();
+    // create application encoder class
+    cTAppEncTop.create();
 
-  // parse configuration
-  try
-  {
-    if(!cTAppEncTop.parseCfg( argc, argv ))
+    // parse configuration
+    try
     {
-      cTAppEncTop.destroy();
+        if(!cTAppEncTop.parseCfg( argc, argv ))
+        {
+            cTAppEncTop.destroy();
 #if ENVIRONMENT_VARIABLE_DEBUG_AND_TEST
-      EnvVar::printEnvVar();
+            EnvVar::printEnvVar();
 #endif
-      return 1;
+            return 1;
+        }
     }
-  }
-  catch (df::program_options_lite::ParseFailure &e)
-  {
-    std::cerr << "Error parsing option \""<< e.arg <<"\" with argument \""<< e.val <<"\"." << std::endl;
-    return 1;
-  }
+    catch (df::program_options_lite::ParseFailure &e)
+    {
+        std::cerr << "Error parsing option \""<< e.arg <<"\" with argument \""<< e.val <<"\"." << std::endl;
+        return 1;
+    }
 
 #if PRINT_MACRO_VALUES
-  printMacroSettings();
+    printMacroSettings();
 #endif
 
 #if ENVIRONMENT_VARIABLE_DEBUG_AND_TEST
-  EnvVar::printEnvVarInUse();
+    EnvVar::printEnvVarInUse();
 #endif
 
 
-  //-------------------------------------------------------------
-  //GLOBAL INIT
-  //-------------------------------------------------------------
-  Global.init_general(); //do not use before parseCfg
-  Global.isEncoder = true;
-  Global.WidthInLCUs  = (int)(ceil((float)cTAppEncTop.getSourceWidth() / CTUSIZE));
-  Global.HeightInLCUs = (int)(ceil((float)cTAppEncTop.getSourceHeight() / CTUSIZE));
-  Global.NumCTUs = Global.WidthInLCUs * Global.HeightInLCUs;
-  Global.DimX = cTAppEncTop.getSourceWidth();
-  Global.DimY = cTAppEncTop.getSourceHeight();
-  cout << "FN_InputYUV (as on cmd line): " << cTAppEncTop.getSourceFileName() << endl << endl;
+    //-------------------------------------------------------------
+    //GLOBAL INIT
+    //-------------------------------------------------------------
+    Global.init_general(); //do not use before parseCfg
+    Global.isEncoder = true;
+    Global.WidthInLCUs  = (int)(ceil((float)cTAppEncTop.getSourceWidth() / CTUSIZE));
+    Global.HeightInLCUs = (int)(ceil((float)cTAppEncTop.getSourceHeight() / CTUSIZE));
+    Global.NumCTUs = Global.WidthInLCUs * Global.HeightInLCUs;
+    Global.DimX = cTAppEncTop.getSourceWidth();
+    Global.DimY = cTAppEncTop.getSourceHeight();
+    Json::Value root;
+    ifstream file("consts.json");
+    file >> root;
+    Global.outputDataset = root["DATASET_GEN_OUTPUT"].asCString();
+    file.close();
+    cout << "FN_InputYUV (as on cmd line): " << cTAppEncTop.getSourceFileName() << endl << endl;
 
-  // starting time
-  Double dResult;
-  clock_t lBefore = clock();
+    // starting time
+    Double dResult;
+    clock_t lBefore = clock();
 
-  // call encoding function
-  cTAppEncTop.encode();
+    // call encoding function
+    cTAppEncTop.encode();
 
-  // ending time
-  dResult = (Double)(clock()-lBefore) / CLOCKS_PER_SEC;
-  printf("\n Total Time: %12.3f sec.\n", dResult);
+    // ending time
+    dResult = (Double)(clock()-lBefore) / CLOCKS_PER_SEC;
+    printf("\n Total Time: %12.3f sec.\n", dResult);
 
-  // destroy application encoder class
-  cTAppEncTop.destroy();
+    // destroy application encoder class
+    cTAppEncTop.destroy();
 
-  return 0;
+    return 0;
 }
 
 //! \}

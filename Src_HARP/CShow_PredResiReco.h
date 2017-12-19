@@ -275,7 +275,7 @@ public:
 
 void exportImagePNG(Mat Image, string nickname, string dirName) {
     string FN;
-    FN = "/Users/omricarmi/Technion/ProjectA/code/FastHEVC/" + dirName + "/" + nickname + ".png";
+    FN = Global.outputDataset + "/" + dirName + "/" + nickname + ".png";
 
     //format given by provided filename!
     int Quality = 0; //0 = slower

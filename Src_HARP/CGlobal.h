@@ -56,7 +56,7 @@ public:
     int NumCTUs;
     int WidthInLCUs;
     int HeightInLCUs;
-
+    string outputDataset;
     char tmptxt[500];
 //  QString FN_InputYUV;
 //  QApplication *App;
