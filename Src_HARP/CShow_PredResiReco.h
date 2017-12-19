@@ -65,7 +65,7 @@ public:
 
         //generate where to save the data
         stringstream ss;
-        ss << "CNNOutput/" << "F" << POC << "/CTU" << CTUIdx;
+        ss << string(Global.outputDataset) << "/F" << POC << "/CTU" << CTUIdx;
         string destDir = ss.str();
         system(("mkdir -p " + destDir).c_str());
         stringstream ss2;
@@ -166,7 +166,7 @@ public:
 
         //FastHEVC
         stringstream ss;
-        ss << "CNNOutput/" << "F" << pcPic->getPOC();
+        ss << string(Global.outputDataset) << "/F" << pcPic->getPOC();
         string destDir = ss.str();
         system(("mkdir -p " + destDir).c_str());
         stringstream ss2;
@@ -190,7 +190,7 @@ public:
 
             //FastHEVC
             stringstream ss;
-            ss << "CNNOutput/" << "F" << pcPic->getPOC() << "/CTU" << CTU_Index;
+            ss << string(Global.outputDataset) << "/F" << pcPic->getPOC() << "/CTU" << CTU_Index;
             string destDir = ss.str();
             system(("mkdir -p " + destDir).c_str());
             //crop to CTU or less not enough
@@ -244,9 +244,9 @@ public:
         //we arrived at the final partition depth for this CU
 
         sCU CU = get_CU_FIN(pcCU, uiAbsZorderIdx);
-        drawSingleCU(PredYuv, CU);
-        drawSingleCU(ResiYuv, CU);
-        drawSingleCU(RecoYuv, CU);
+//        drawSingleCU(PredYuv, CU);
+//        drawSingleCU(ResiYuv, CU);
+//        drawSingleCU(RecoYuv, CU);
 
         // FastHEVC
         CuData cuData(OrgYuv,CU);
@@ -275,7 +275,7 @@ public:
 
 void exportImagePNG(Mat Image, string nickname, string dirName) {
     string FN;
-    FN = Global.outputDataset + "/" + dirName + "/" + nickname + ".png";
+    FN = dirName + "/" + nickname + ".png";
 
     //format given by provided filename!
     int Quality = 0; //0 = slower

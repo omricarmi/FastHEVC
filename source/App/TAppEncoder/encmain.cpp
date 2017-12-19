@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
     Json::Value root;
     ifstream file("consts.json");
     file >> root;
-    Global.outputDataset = root["DATASET_GEN_OUTPUT"].asCString();
+    Global.outputDataset = root["DATASET_GEN_OUTPUT"].asString() + "/CNNOutput";
     file.close();
     cout << "FN_InputYUV (as on cmd line): " << cTAppEncTop.getSourceFileName() << endl << endl;
 
