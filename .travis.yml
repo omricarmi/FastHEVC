@@ -28,6 +28,7 @@ install:
   - bash build_opencv.sh
 
 # Install opencv
+  - cd opencv/build
   - sudo make install
 
 script:
