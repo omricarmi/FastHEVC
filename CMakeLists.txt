@@ -207,7 +207,8 @@ set(SOURCE_FILES
 add_executable(HM_16_14_ENC
         ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER} ${SOURCE_FILES_HARP} ${SOURCE_FILES_3RD_PARTY})
 add_executable(HM_16_14_DEC
-        ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
+        ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER} ${SOURCE_FILES_HARP})
 
 # Link OpenCV to our encoder target
 target_link_libraries(HM_16_14_ENC ${OpenCV_LIBS})
+target_link_libraries(HM_16_14_DEC ${OpenCV_LIBS})
