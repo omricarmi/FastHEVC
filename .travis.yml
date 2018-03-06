@@ -39,10 +39,10 @@ script:
 
 # build Encoder
   - cd ${TRAVIS_BUILD_DIR}/cmake-build-debug
-  - cmake --build .. --target HM_16_14_ENC -- -j 4
-  - make
+  - cmake --build . --target HM_16_14_ENC -- -j 4
+#  - make
 
 # build Decoder
   - cd ${TRAVIS_BUILD_DIR}/cmake-build-debug
-  - cmake --build .. --target HM_16_14_DEC -- -j 4
-  - make
+  - cmake --build . --target HM_16_14_DEC -- -j 4
+#  - make
