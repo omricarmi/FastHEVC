@@ -4,6 +4,11 @@ language:
 compiler:
   - gcc
 
+cache:
+
+  directories:
+    - opencv/
+
 before_install:
   - sudo apt-get update
 
@@ -11,13 +16,18 @@ install:
 # OpenCV 3.4.0 Dependency first
   - sudo apt-get install build-essential
   - sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-  - git clone https://github.com/opencv/opencv.git
-  - cd opencv
-  - git checkout tags/3.4.0
-  - mkdir build
-  - cd build
-  - cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
-  - make -j4
+#  - git clone https://github.com/opencv/opencv.git
+#  - cd opencv
+#  - git checkout tags/3.4.0
+#  - mkdir build
+#  - cd build
+#  - cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+#  - make -j4
+
+# Download OpenCV v3.4.0
+  - bash build_opencv.sh
+
+# Install opencv
   - sudo make install
 
 script:
