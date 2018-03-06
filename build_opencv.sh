@@ -21,6 +21,7 @@ else
     cd build
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local \
-          -D INSTALL_C_EXAMPLES=OFF
+          -D INSTALL_C_EXAMPLES=OFF \
+          ..
     make -j8
 fi
