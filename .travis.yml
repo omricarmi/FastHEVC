@@ -32,5 +32,6 @@ install:
   - sudo make install
 
 script:
+  - cd ${TRAVIS_BUILD_DIR}
   - cmake --build ./cmake-build-debug --target HM_16_14_EEC -- -j 4
   - cmake --build ./cmake-build-debug --target HM_16_14_DEC -- -j 4
