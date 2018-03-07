@@ -37,10 +37,7 @@ script:
   - cd ${TRAVIS_BUILD_DIR}/cmake-build-debug
   - cmake -D CMAKE_BUILD_TYPE=Debug ..
 
-# build Encoder
+# build Encoder and Decoder
   - cd ${TRAVIS_BUILD_DIR}/cmake-build-debug
-  - cmake --build . --target HM_16_14_ENC -- -j 4
+  - cmake --build . --target all -- -j 8
 
-# build Decoder
-  - cd ${TRAVIS_BUILD_DIR}/cmake-build-debug
-  - cmake --build . --target HM_16_14_DEC -- -j 4
