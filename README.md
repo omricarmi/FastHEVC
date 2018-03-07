@@ -3,7 +3,7 @@ This software package is an enhancement for the reference software for Rec. ITU-
 More details soon :-)
 
 [![Build Status](https://travis-ci.org/omricarmi/FastHEVC.svg?branch=master)](https://travis-ci.org/omricarmi/FastHEVC)
-
+Tested in Travis CI with Ubuntu and OpenCV 3.4.0
 Tools we are using :
 ---
 * HEVC Analyzer for Rapid Prototyping (HARP)
