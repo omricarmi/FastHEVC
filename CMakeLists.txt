@@ -45,14 +45,81 @@ set(SOURCE_FILES_DECODER
         source/App/TAppDecoder/TAppDecCfg.cpp
         source/App/TAppDecoder/TAppDecCfg.h
         source/App/TAppDecoder/TAppDecTop.cpp
-        source/App/TAppDecoder/TAppDecTop.h)
+        source/App/TAppDecoder/TAppDecTop.h
+        source/Lib/TLibDecoder/AnnexBread.cpp
+        source/Lib/TLibDecoder/AnnexBread.h
+        source/Lib/TLibDecoder/NALread.cpp
+        source/Lib/TLibDecoder/NALread.h
+        source/Lib/TLibDecoder/SEIread.cpp
+        source/Lib/TLibDecoder/SEIread.h
+        source/Lib/TLibDecoder/SyntaxElementParser.cpp
+        source/Lib/TLibDecoder/SyntaxElementParser.h
+        source/Lib/TLibDecoder/TDecBinCoder.h
+        source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp
+        source/Lib/TLibDecoder/TDecBinCoderCABAC.h
+        source/Lib/TLibDecoder/TDecCAVLC.cpp
+        source/Lib/TLibDecoder/TDecCAVLC.h
+        source/Lib/TLibDecoder/TDecCu.cpp
+        source/Lib/TLibDecoder/TDecCu.h
+        source/Lib/TLibDecoder/TDecEntropy.cpp
+        source/Lib/TLibDecoder/TDecEntropy.h
+        source/Lib/TLibDecoder/TDecGop.cpp
+        source/Lib/TLibDecoder/TDecGop.h
+        source/Lib/TLibDecoder/TDecSbac.cpp
+        source/Lib/TLibDecoder/TDecSbac.h
+        source/Lib/TLibDecoder/TDecSlice.cpp
+        source/Lib/TLibDecoder/TDecSlice.h
+        source/Lib/TLibDecoder/TDecTop.cpp
+        source/Lib/TLibDecoder/TDecTop.h)
 
 set(SOURCE_FILES_ENCODER
         source/App/TAppEncoder/encmain.cpp
         source/App/TAppEncoder/TAppEncCfg.cpp
         source/App/TAppEncoder/TAppEncCfg.h
         source/App/TAppEncoder/TAppEncTop.cpp
-        source/App/TAppEncoder/TAppEncTop.h)
+        source/App/TAppEncoder/TAppEncTop.h
+        source/Lib/TLibEncoder/AnnexBwrite.h
+        source/Lib/TLibEncoder/NALwrite.cpp
+        source/Lib/TLibEncoder/NALwrite.h
+        source/Lib/TLibEncoder/SEIEncoder.cpp
+        source/Lib/TLibEncoder/SEIEncoder.h
+        source/Lib/TLibEncoder/SEIwrite.cpp
+        source/Lib/TLibEncoder/SEIwrite.h
+        source/Lib/TLibEncoder/SyntaxElementWriter.cpp
+        source/Lib/TLibEncoder/SyntaxElementWriter.h
+        source/Lib/TLibEncoder/TEncAnalyze.h
+        source/Lib/TLibEncoder/TEncBinCoder.h
+        source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp
+        source/Lib/TLibEncoder/TEncBinCoderCABAC.h
+        source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp
+        source/Lib/TLibEncoder/TEncBinCoderCABACCounter.h
+        source/Lib/TLibEncoder/TEncCavlc.cpp
+        source/Lib/TLibEncoder/TEncCavlc.h
+        source/Lib/TLibEncoder/TEncCfg.h
+        source/Lib/TLibEncoder/TEncCu.cpp
+        source/Lib/TLibEncoder/TEncCu.h
+        source/Lib/TLibEncoder/TEncEntropy.cpp
+        source/Lib/TLibEncoder/TEncEntropy.h
+        source/Lib/TLibEncoder/TEncGOP.cpp
+        source/Lib/TLibEncoder/TEncGOP.h
+        source/Lib/TLibEncoder/TEncPic.cpp
+        source/Lib/TLibEncoder/TEncPic.h
+        source/Lib/TLibEncoder/TEncPreanalyzer.cpp
+        source/Lib/TLibEncoder/TEncPreanalyzer.h
+        source/Lib/TLibEncoder/TEncRateCtrl.cpp
+        source/Lib/TLibEncoder/TEncRateCtrl.h
+        source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp
+        source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.h
+        source/Lib/TLibEncoder/TEncSbac.cpp
+        source/Lib/TLibEncoder/TEncSbac.h
+        source/Lib/TLibEncoder/TEncSearch.cpp
+        source/Lib/TLibEncoder/TEncSearch.h
+        source/Lib/TLibEncoder/TEncSlice.cpp
+        source/Lib/TLibEncoder/TEncSlice.h
+        source/Lib/TLibEncoder/TEncTop.cpp
+        source/Lib/TLibEncoder/TEncTop.h
+        source/Lib/TLibEncoder/WeightPredAnalysis.cpp
+        source/Lib/TLibEncoder/WeightPredAnalysis.h)
 
 set(SOURCE_FILES_HARP
         Src_HARP/CCallgrind.h
@@ -137,80 +204,14 @@ set(SOURCE_FILES
         source/Lib/TLibCommon/TComYuv.cpp
         source/Lib/TLibCommon/TComYuv.h
         source/Lib/TLibCommon/TypeDef.h
-        source/Lib/TLibDecoder/AnnexBread.cpp
-        source/Lib/TLibDecoder/AnnexBread.h
-        source/Lib/TLibDecoder/NALread.cpp
-        source/Lib/TLibDecoder/NALread.h
-        source/Lib/TLibDecoder/SEIread.cpp
-        source/Lib/TLibDecoder/SEIread.h
-        source/Lib/TLibDecoder/SyntaxElementParser.cpp
-        source/Lib/TLibDecoder/SyntaxElementParser.h
-        source/Lib/TLibDecoder/TDecBinCoder.h
-        source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp
-        source/Lib/TLibDecoder/TDecBinCoderCABAC.h
-        source/Lib/TLibDecoder/TDecCAVLC.cpp
-        source/Lib/TLibDecoder/TDecCAVLC.h
-        source/Lib/TLibDecoder/TDecCu.cpp
-        source/Lib/TLibDecoder/TDecCu.h
-        source/Lib/TLibDecoder/TDecEntropy.cpp
-        source/Lib/TLibDecoder/TDecEntropy.h
-        source/Lib/TLibDecoder/TDecGop.cpp
-        source/Lib/TLibDecoder/TDecGop.h
-        source/Lib/TLibDecoder/TDecSbac.cpp
-        source/Lib/TLibDecoder/TDecSbac.h
-        source/Lib/TLibDecoder/TDecSlice.cpp
-        source/Lib/TLibDecoder/TDecSlice.h
-        source/Lib/TLibDecoder/TDecTop.cpp
-        source/Lib/TLibDecoder/TDecTop.h
-        source/Lib/TLibEncoder/AnnexBwrite.h
-        source/Lib/TLibEncoder/NALwrite.cpp
-        source/Lib/TLibEncoder/NALwrite.h
-        source/Lib/TLibEncoder/SEIEncoder.cpp
-        source/Lib/TLibEncoder/SEIEncoder.h
-        source/Lib/TLibEncoder/SEIwrite.cpp
-        source/Lib/TLibEncoder/SEIwrite.h
-        source/Lib/TLibEncoder/SyntaxElementWriter.cpp
-        source/Lib/TLibEncoder/SyntaxElementWriter.h
-        source/Lib/TLibEncoder/TEncAnalyze.h
-        source/Lib/TLibEncoder/TEncBinCoder.h
-        source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp
-        source/Lib/TLibEncoder/TEncBinCoderCABAC.h
-        source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp
-        source/Lib/TLibEncoder/TEncBinCoderCABACCounter.h
-        source/Lib/TLibEncoder/TEncCavlc.cpp
-        source/Lib/TLibEncoder/TEncCavlc.h
-        source/Lib/TLibEncoder/TEncCfg.h
-        source/Lib/TLibEncoder/TEncCu.cpp
-        source/Lib/TLibEncoder/TEncCu.h
-        source/Lib/TLibEncoder/TEncEntropy.cpp
-        source/Lib/TLibEncoder/TEncEntropy.h
-        source/Lib/TLibEncoder/TEncGOP.cpp
-        source/Lib/TLibEncoder/TEncGOP.h
-        source/Lib/TLibEncoder/TEncPic.cpp
-        source/Lib/TLibEncoder/TEncPic.h
-        source/Lib/TLibEncoder/TEncPreanalyzer.cpp
-        source/Lib/TLibEncoder/TEncPreanalyzer.h
-        source/Lib/TLibEncoder/TEncRateCtrl.cpp
-        source/Lib/TLibEncoder/TEncRateCtrl.h
-        source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp
-        source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.h
-        source/Lib/TLibEncoder/TEncSbac.cpp
-        source/Lib/TLibEncoder/TEncSbac.h
-        source/Lib/TLibEncoder/TEncSearch.cpp
-        source/Lib/TLibEncoder/TEncSearch.h
-        source/Lib/TLibEncoder/TEncSlice.cpp
-        source/Lib/TLibEncoder/TEncSlice.h
-        source/Lib/TLibEncoder/TEncTop.cpp
-        source/Lib/TLibEncoder/TEncTop.h
-        source/Lib/TLibEncoder/WeightPredAnalysis.cpp
-        source/Lib/TLibEncoder/WeightPredAnalysis.h
         source/Lib/TLibVideoIO/TVideoIOYuv.cpp
         source/Lib/TLibVideoIO/TVideoIOYuv.h)
 
 add_executable(HM_16_14_ENC
         ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_ENCODER} ${SOURCE_FILES_HARP} ${SOURCE_FILES_3RD_PARTY})
 add_executable(HM_16_14_DEC
-        ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER})
+        ${SOURCE_FILES} ${SOURCE_FILES} ${SOURCE_FILES_DECODER} ${SOURCE_FILES_HARP})
 
 # Link OpenCV to our encoder target
 target_link_libraries(HM_16_14_ENC ${OpenCV_LIBS})
+target_link_libraries(HM_16_14_DEC ${OpenCV_LIBS})
