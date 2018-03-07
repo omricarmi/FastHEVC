@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 3.6)
 project(HM_16_14)
 
 # Importing OpenCV3 (link it in the end of this file)
-find_package(OpenCV REQUIRED)
+#set(OpenCV_DIR
+#        C:/openCV/build/x64/vc14/lib)
+find_package(OpenCV 3 REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
+#include_directories(C:/openCV/sources/include)
 
 #
 #find_package ( Qt4 COMPONENTS QtCore QTGui QtXml REQUIRED )
