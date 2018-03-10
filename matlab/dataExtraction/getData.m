@@ -16,4 +16,5 @@ for i=1:length(files)
 end
 save('dataStruct','data');
 %%
+load('dataStruct.mat');
 sortToDirLabels(data,'div','undiv');

@@ -26,6 +26,8 @@
 digitDatasetPath = fullfile(matlabroot,'toolbox','nnet','nndemos',...
     'nndatasets','DigitDataset');
 
+
+digitDatasetPath = '.';
 digitData = imageDatastore(digitDatasetPath,...
     'IncludeSubfolders',true,'LabelSource','foldernames');
 
@@ -66,7 +68,7 @@ trainNumFiles = 750;
 %% Define Network Architecture
 % Define the convolutional neural network architecture.
 layers = [
-    imageInputLayer([28 28 1])
+    imageInputLayer([32 32 3])
     
     convolution2dLayer(3,16,'Padding',1)
     batchNormalizationLayer
@@ -84,7 +86,7 @@ layers = [
     batchNormalizationLayer
     reluLayer
     
-    fullyConnectedLayer(10)
+    fullyConnectedLayer(2)
     softmaxLayer
     classificationLayer];
 

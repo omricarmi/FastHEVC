@@ -12,7 +12,7 @@
 
 % digitDatasetPath = fullfile(matlabroot,'toolbox','nnet','nndemos', ...
 %         'nndatasets','DigitDataset');
-cu32DataSet = 'C:\Users\harelnh\Desktop\winter 2018\project\FastHEVC\matlab\dataExtraction\classified data';
+cu32DataSet = '.';
 digitData = imageDatastore(cu32DataSet, ...
         'IncludeSubfolders',true,'LabelSource','foldernames');
     
@@ -58,11 +58,11 @@ size(img)
 % Divide the data into training and test sets, so that each category in the
 % training set has 750 images and the test set has the remaining images
 % from each label.
-trainingNumFiles = 4000;
+trainingNumFiles = 100;
 rng(1) % For reproducibility
 [trainDigitData,testDigitData] = splitEachLabel(digitData, ...
 				trainingNumFiles,'randomize'); 
-
+testDigitData = trainDigitData;
 %%
 % |splitEachLabel| splits the image files in |digitData| into two new datastores,
 % |trainDigitData| and |testDigitData|.  
@@ -152,7 +152,7 @@ layers = [imageInputLayer([32 32 3])
 % descent with momentum. Set the maximum number of epochs at 15 (an epoch
 % is a full training cycle on the whole training data), and start the
 % training with an initial learning rate of 0.0001.
-options = trainingOptions('sgdm','MaxEpochs',15, ...
+options = trainingOptions('sgdm','MaxEpochs',100, ...
 	'InitialLearnRate',0.0001);  
 
 %% Train the Network Using Training Data

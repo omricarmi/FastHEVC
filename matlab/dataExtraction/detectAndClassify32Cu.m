@@ -15,7 +15,7 @@ if(jsonCu00Depth == 0)
     return;
 end
 
-frameName = split(fullfile(srcPath),'\');
+frameName = split(fullfile(srcPath),'/');
 if isempty(frameName{end})
     frameName = frameName{end-2};
 else
