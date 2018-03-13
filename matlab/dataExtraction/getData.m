@@ -1,10 +1,10 @@
-%%
+""%%
 close all;clear all;clc
 %%
 % files = rdir('./CNNOutput/*/*/CTU-*');
 
 %%
-path = '../../../../CNNOutput';
+path = '/home/omriharel/Desktop/dataOutput/CNNOutput';
 addpath(path);
 files = getCTUsFolders(path);
 

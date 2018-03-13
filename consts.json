@@ -1,8 +1,8 @@
 {
-  "ITU_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/ITUVideos",
-  "ENC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/encVideos",
-  "REC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/recVideos",
-  "DATASET_GEN_OUTPUT" : "/Users/omricarmi/Technion/ProjectA/code/FastHEVC",
+  "ITU_VIDEO_PATH" : "/home/omriharel/Desktop/ITUVideos/",
+  "ENC_VIDEO_PATH" : "/home/omriharel/Desktop/encVideos/",
+  "REC_VIDEO_PATH" : "/home/omriharel/Desktop/recVideos/",
+  "DATASET_GEN_OUTPUT" : "/home/omriharel/Desktop/dataOutput/",
   "videos": [
     {
       "file_name":"BasketballDrill_832x480_50.yuv",
@@ -19,7 +19,23 @@
     {
       "file_name":"BasketballPass_416x240_50.yuv",
       "cfg_file":"BasketballPass_encoder_intra_main.cfg"
+    },
+    {
+      "file_name":"stefan_cif_352x288_30.yuv",
+      "cfg_file":"stefan_cif_encoder_intra_main.cfg"
+    },
+    {
+      "file_name":"football_cif_352x288_30.yuv",
+      "cfg_file":"football_cif_encoder_intra_main.cfg"
+    },
+    {
+      "file_name":"basketball_big_854x480_30.yuv",
+      "cfg_file":"basketball_big_854x480_30_intra_main.cfg"
+    },
+    {
+      "file_name":"football_big_854x480_30.yuv",
+      "cfg_file":"football_big_854x480_30_intra_main.cfg"
     }
-
-  ]
+]
 }
+

@@ -4,7 +4,7 @@ project(HM_16_14)
 # Importing OpenCV3 (link it in the end of this file)
 #set(OpenCV_DIR
 #        C:/openCV/build/x64/vc14/lib)
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 #include_directories(C:/openCV/sources/include)
 
