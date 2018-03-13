@@ -1578,7 +1578,7 @@ Bool TAppEncCfg::parseCfg( Int argc, TChar* argv[] )
 
     {
         const std::string s = m_inputFileName;
-        std::regex rgx("\\/(\\w+).yuv$");
+        std::regex rgx("\\/*(\\w+).yuv$");
         std::smatch match;
         if (!std::regex_search(s.begin(), s.end(), match, rgx)){
             std::cerr << "FastHEVC failed to extract input file name\n";
