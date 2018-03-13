@@ -2,7 +2,8 @@
   "ITU_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/ITUVideos",
   "ENC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/encVideos",
   "REC_VIDEO_PATH" : "/Users/omricarmi/Technion/ProjectA/recVideos",
-  "DATASET_GEN_OUTPUT" : "/Users/omricarmi/Technion/ProjectA/",
+  "DATASET_GEN_OUTPUT" : "/Users/omricarmi/Technion/ProjectA",
+  "CFG_PATH" : "/Users/omricarmi/Technion/projectA/code/FastHEVC/cfg/custom",
   "videos": [
     {
       "file_name":"BasketballDrill_832x480_50.yuv",
