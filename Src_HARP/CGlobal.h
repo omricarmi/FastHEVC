@@ -57,6 +57,7 @@ public:
     int WidthInLCUs;
     int HeightInLCUs;
     string outputDataset;
+    string inputFilename;
     char tmptxt[500];
 //  QString FN_InputYUV;
 //  QApplication *App;
