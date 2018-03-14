@@ -183,7 +183,10 @@ local.properties
 .scala_dependencies
 .worksheet
 
+#FastHEVC
 cmake-build-debug/
 str.bin
-CNNOutput/
+**CNNOutput**
+**CNNDataset**
 *.mat
+matlab/**/*.png

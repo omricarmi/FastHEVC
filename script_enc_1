@@ -22,7 +22,7 @@ while (VIDEO_NUM < 0) or (VIDEO_NUM > VIDEOS_LEN-1):
 #prepare params for execution
 SRC_YUV = consts["ITU_VIDEO_PATH"] + "/" + consts["videos"][VIDEO_NUM]["file_name"]
 OUT_BIN = consts["ENC_VIDEO_PATH"] + "/" + consts["videos"][VIDEO_NUM]["file_name"][:-4] + "_encoded.bin"
-CFG_FILE = "cfg/custom/" + consts["videos"][VIDEO_NUM]["cfg_file"]
+CFG_FILE = consts["CFG_PATH"] + "/" + consts["videos"][VIDEO_NUM]["cfg_file"]
 COMMAND = "cmake-build-debug/HM_16_14_ENC -c " + CFG_FILE + " -i " + SRC_YUV + " -b " + OUT_BIN;
 
 # windows adapter
