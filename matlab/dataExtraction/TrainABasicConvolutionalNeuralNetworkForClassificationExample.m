@@ -1,4 +1,5 @@
 %% Create Simple Deep Learning Network for Classification
+% clear all; close all;
 %%
 % This example shows how to create and train a simple convolutional neural
 % network for deep learning classification. Convolutional neural networks
@@ -27,19 +28,19 @@ digitDatasetPath = fullfile(matlabroot,'toolbox','nnet','nndemos',...
     'nndatasets','DigitDataset');
 
 
-digitDatasetPath = '.';
+digitDatasetPath = '.' %'/home/omriharel/Desktop/dataOutput/dividedData/football1';
 digitData = imageDatastore(digitDatasetPath,...
     'IncludeSubfolders',true,'LabelSource','foldernames');
 
 
 %%
 % Display some of the images in the datastore.
-figure;
-perm = randperm(10000,20);
-for i = 1:20
-    subplot(4,5,i);
-    imshow(digitData.Files{perm(i)});
-end
+% figure;
+% perm = randperm(10000,20);
+% for i = 1:20
+%     subplot(4,5,i);
+%     imshow(digitData.Files{perm(i)});
+% end
 
 %%
 % Calculate the number of images in each category. |labelCount| is a table
@@ -62,8 +63,8 @@ size(img)
 % contains the remaining images from each label. |splitEachLabel| splits
 % the datastore |digitData| into two new datastores, |trainDigitData| and
 % |valDigitData|.
-trainNumFiles = 4800;
-valNumFiles = 1200;
+trainNumFiles = floor(0.8*min(labelCount.Count));
+valNumFiles = floor(0.2*min(labelCount.Count));
 [trainDigitData,valDigitData] = splitEachLabel(digitData,trainNumFiles,'randomize');
 [valDigitData,~] = splitEachLabel(valDigitData,valNumFiles,'randomize');
 
@@ -192,13 +193,14 @@ layers = [
 % update the network weights. Turn on the training progress plot, and turn
 % off the command window output.
 options = trainingOptions('sgdm',...
-    'MaxEpochs',3, ...
+    'MaxEpochs',10, ...
     'ValidationData',valDigitData,...
     'ValidationFrequency',30,...
+    'ValidationPatience', Inf,...
     'LearnRateSchedule','piecewise',...
-    'LearnRateDropFactor',0.2,...
+    'LearnRateDropFactor',0.,...
     'LearnRateDropPeriod',1,...
-    'ExecutionEnvironment','parallel',...
+    'ExecutionEnvironment','gpu',...
     'Verbose',false,...
     'Plots','training-progress');
 

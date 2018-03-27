@@ -190,3 +190,4 @@ str.bin
 **CNNDataset**
 *.mat
 matlab/**/*.png
+*.png

@@ -12,7 +12,7 @@
 
 % digitDatasetPath = fullfile(matlabroot,'toolbox','nnet','nndemos', ...
 %         'nndatasets','DigitDataset');
-cu32DataSet = '.';
+cu32DataSet = '/home/omriharel/Desktop/dataOutput/dividedData/football1';
 digitData = imageDatastore(cu32DataSet, ...
         'IncludeSubfolders',true,'LabelSource','foldernames');
     
