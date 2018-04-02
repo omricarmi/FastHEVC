@@ -4,7 +4,7 @@ close all;clear all;clc
 % files = rdir('./CNNOutput/*/*/CTU-*');
 
 %%
-curVideo = 'cheers';
+curVideo = 'BasketballDrill_832x480_50';
 path = ['/home/omriharel/Desktop/dataOutput/CNNDataset_' curVideo];
 addpath(path);
 files = getCTUsFolders(path);

@@ -31,16 +31,19 @@
 % * Load the best network from disk and evaluate it on the test set.
 
 %% Prepare Data
-digitDatasetPath = '.' %'/home/omriharel/Desktop/dataOutput/dividedData/football1';
+digitDatasetPath = '/home/omriharel/Desktop/divUndiv/data';
+testDatasetPath = '/home/omriharel/Desktop/divUndiv/test';
 digitData = imageDatastore(digitDatasetPath,...
+    'IncludeSubfolders',true,'LabelSource','foldernames');
+testDigitData = imageDatastore(testDatasetPath,...
     'IncludeSubfolders',true,'LabelSource','foldernames');
 labelCount = countEachLabel(digitData)
 trainNumFiles = floor(0.8*min(labelCount.Count));
-valNumFiles = floor(0.2*trainNumFiles);
-testNumFiles = floor(0.2*min(labelCount.Count));
-[trainDigitData,testDigitData] = splitEachLabel(digitData,trainNumFiles,'randomize');
-[valDigitData,trainDigitData] = splitEachLabel(trainDigitData,valNumFiles,'randomize');
-[testDigitData,~] = splitEachLabel(testDigitData,testNumFiles,'randomize');
+% valNumFiles = floor(0.2*trainNumFiles);
+% testNumFiles = floor(0.2*min(labelCount.Count));
+[trainDigitData,valDigitData] = splitEachLabel(digitData,trainNumFiles,'randomize');
+% [valDigitData,trainDigitData] = splitEachLabel(trainDigitData,valNumFiles,'randomize');
+% [testDigitData,~] = splitEachLabel(testDigitData,testNumFiles,'randomize');
 
 
 % % Download the CIFAR-10 data set [1]. This data set contains 60,000 images,
@@ -124,8 +127,8 @@ ObjFcn = makeObjFcn(trainDigitData,valDigitData);
 % returns the file names to |bayesopt|. The |bayesopt| function then
 % returns the file names in |BayesObject.UserDataTrace|.
 BayesObject = bayesopt(ObjFcn,optimVars,...
-    'MaxObj',30,...
-    'MaxTime',12*60*60,...
+     'MaxObj',30,... % 30 
+    'MaxTime',10*60*60,...
     'IsObjectiveDeterministic',false,...
     'UseParallel',false);
 
@@ -138,7 +141,7 @@ BayesObject = bayesopt(ObjFcn,optimVars,...
 bestIdx = BayesObject.IndexOfMinimumTrace(end);
 fileName = BayesObject.UserDataTrace{bestIdx};
 load(fileName);
-
+%%
 [predictedLabels,probs] = classify(trainedNet,testDigitData);
 testAccuracy = mean(predictedLabels == testDigitData.Labels);
 testError = 1 - testAccuracy;
@@ -161,18 +164,32 @@ title('Confusion Matrix');
 % Display some test images together with their predicted classes and the
 % probabilities of those classes.
 figure
-idx = randperm(size(testDigitData.Files,1),25);
-for i = 1:numel(idx)
+PROB_MAX = 0.6;
+PROB_MIN = 0;
+idx = randperm(size(testDigitData.Files,1));
+for i = 1:25
+    while PROB_MIN > max(probs(idx(i),:)) || max(probs(idx(i),:)) > PROB_MAX 
+        idx(i) = [];
+        if(i > length(idx)) 
+            break;
+        end
+    end
+    prob = num2str(100*max(probs(idx(i),:)),3);
+    predClass = char(predictedLabels(idx(i)));
+    isCorrect = predClass == string(testDigitData.Labels(idx(i)));
+    if(i > length(idx)) 
+            break;
+    end
     subplot(5,5,i)
     imshow(testDigitData.Files{idx(i)});
 %     imshow(testImages(:,:,:,idx(i)));
-    prob = num2str(100*max(probs(idx(i),:)),3);
-    predClass = char(predictedLabels(idx(i)));
-    label = [predClass,', ',prob,'%'];
+    label = [predClass,', ',prob,'%',', correct:',num2str(isCorrect)];
     title(label)
 end
 
-
+%% Identify Finished Test
+isTestExitProperly = true;
+save('isTestExitProperly','isTestExitProperly');
 %% Objective Function for Optimization
 % Define the objective function for optimization. This function performs
 % the following steps:

@@ -30,8 +30,8 @@
       "cfg_file":"football_cif_encoder_intra_main.cfg"
     },
     {
-      "file_name":"basketball_long_cropped_848x480_30.yuv",
-      "cfg_file":"basketball_long_cropped_848x480_30.cfg"
+      "file_name":"basketball_big_854x480_30.yuv",
+      "cfg_file":"basketball_big_854x480_30_intra_main.cfg"
     },
     {
       "file_name":"football_long_cropped_848x480_30.yuv",
